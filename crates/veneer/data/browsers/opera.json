@@ -1,0 +1,18 @@
+{
+  "name": "Opera",
+  "engine": "chromium",
+  "clientHints": true,
+  "chBrand": "Opera",
+  "toolbar": {
+    "desktop": 85,
+    "mobile": 112
+  },
+  "versions": [
+    {"major":140,"full":"140.0.6074.17","chromium":157,"chromiumFull":"157.0.8103.39","weight":100}
+  ],
+  "ua": {
+    "windows": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{chromium}.0.0.0 Safari/537.36 OPR/{major}.0.0.0",
+    "macos": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{chromium}.0.0.0 Safari/537.36 OPR/{major}.0.0.0",
+    "linux": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{chromium}.0.0.0 Safari/537.36 OPR/{major}.0.0.0"
+  }
+}

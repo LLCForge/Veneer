@@ -1,0 +1,12 @@
+{
+  "name": "Nintendo Switch",
+  "platform": "",
+  "insets": {
+    "top": 0,
+    "bottom": 0
+  },
+  "versions": [
+    {"name":"firmware","platformVersion":"","weight":100}
+  ],
+  "fonts": []
+}

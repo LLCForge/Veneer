@@ -1,0 +1,15 @@
+{
+  "name": "Samsung TV Browser",
+  "engine": "chromium",
+  "toolbar": {
+    "desktop": 0,
+    "mobile": 0
+  },
+  "versions": [
+    {"major":8,"full":"8.0","chromium":108,"chromiumFull":"108.0.5359.1","weight":60},
+    {"major":7,"full":"7.0","chromium":94,"chromiumFull":"94.0.4606.31","weight":40}
+  ],
+  "ua": {
+    "tizen": "Mozilla/5.0 (SMART-TV; LINUX; Tizen {full}) AppleWebKit/537.36 (KHTML, like Gecko) {chromiumFull}/{full} TV Safari/537.36"
+  }
+}

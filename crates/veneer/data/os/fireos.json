@@ -1,0 +1,13 @@
+{
+  "name": "Fire OS",
+  "platform": "Linux armv81",
+  "chPlatform": "Android",
+  "insets": {
+    "top": 0,
+    "bottom": 0
+  },
+  "versions": [
+    {"name":"8","platformVersion":"11.0.0","uaToken":"11","weight":100}
+  ],
+  "fonts": []
+}

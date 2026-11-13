@@ -1,0 +1,13 @@
+{
+  "windows": {
+    "ar": ["Aldhabi", "Andalus", "Arabic Typesetting", "Microsoft Uighur", "Sakkal Majalla", "Simplified Arabic", "Simplified Arabic Fixed", "Traditional Arabic", "Urdu Typesetting"],
+    "fa": ["Aldhabi", "Andalus", "Arabic Typesetting", "Microsoft Uighur", "Sakkal Majalla", "Simplified Arabic", "Simplified Arabic Fixed", "Traditional Arabic", "Urdu Typesetting"],
+    "he": ["Aharoni", "David", "FrankRuehl", "Gisha", "Levenim MT", "Miriam", "Miriam Fixed", "Narkisim", "Rod"],
+    "ja": ["BIZ UDGothic", "BIZ UDMincho", "BIZ UDPGothic", "BIZ UDPMincho", "MS Mincho", "MS PMincho", "Meiryo", "Meiryo UI", "UD Digi Kyokasho N-B", "UD Digi Kyokasho N-R", "UD Digi Kyokasho NK-B", "UD Digi Kyokasho NK-R", "UD Digi Kyokasho NP-B", "UD Digi Kyokasho NP-R", "Yu Mincho"],
+    "ko": ["Batang", "BatangChe", "Dotum", "DotumChe", "Gulim", "GulimChe", "Gungsuh", "GungsuhChe"],
+    "zh-CN": ["DengXian", "FangSong", "KaiTi", "SimHei"],
+    "zh-TW": ["DFKai-SB", "MingLiU", "MingLiU_HKSCS", "PMingLiU"],
+    "zh-HK": ["DFKai-SB", "MingLiU", "MingLiU_HKSCS", "PMingLiU"],
+    "th": ["Angsana New", "AngsanaUPC", "Browallia New", "BrowalliaUPC", "Cordia New", "CordiaUPC", "DilleniaUPC", "EucrosiaUPC", "FreesiaUPC", "IrisUPC", "JasmineUPC", "KodchiangUPC", "Leelawadee", "LilyUPC"]
+  }
+}

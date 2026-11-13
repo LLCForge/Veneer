@@ -1,0 +1,15 @@
+{
+  "name": "@llcforge/wdio-veneer-service",
+  "version": "0.1.0",
+  "description": "WebdriverIO service that applies a Veneer profile (capabilities, CDP, BiDi preload script).",
+  "license": "MIT",
+  "repository": { "type": "git", "url": "git+https://github.com/LLCForge/Veneer.git", "directory": "packages/wdio-service" },
+  "keywords": ["veneer", "fingerprint", "webdriverio", "wdio-service", "wdio-plugin"],
+  "main": "index.js",
+  "types": "index.d.ts",
+  "files": ["index.js", "index.d.ts"],
+  "engines": { "node": ">=20" },
+  "dependencies": { "@llcforge/veneer": "^0.1.0" },
+  "peerDependencies": { "webdriverio": ">=9" },
+  "scripts": { "test": "node --test \"test/*.test.js\"" }
+}

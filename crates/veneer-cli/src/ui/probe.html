@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <script src="/v1/script?__QUERY__"></script>
+  <script src="/v1/collector.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Veneer</title>
+  <link rel="icon" href="/favicon.ico">
+  <link rel="stylesheet" href="/style.css">
+  <script src="/i18n.js"></script>
+  <script src="/probe.js" defer></script>
+</head>
+<body>
+  <header class="bar">
+    <img src="/logo.png" alt="" width="36" height="36">
+    <div>
+      <h1 data-i18n="probeTitle">Canlı kontrol</h1>
+      <p class="muted" data-i18n="probeHelp">Parmak izi bu sayfaya uygulandı.</p>
+    </div>
+    <nav class="nav" aria-label="Language / Dil">
+      <div class="switch" role="group" aria-label="Language / Dil">
+        <button type="button" class="chip" data-lang="tr" aria-pressed="true">TR</button>
+        <button type="button" class="chip" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+      <a class="link" href="/" data-i18n="back">Geri dön</a>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="panel" aria-live="polite">
+      <div class="row between">
+        <h2 id="title" data-i18n="checking">Kontrol ediliyor…</h2>
+        <span id="score" class="badge"></span>
+      </div>
+      <p class="muted" data-i18n="probeNote">Normal bir tarayıcıda yalnızca JavaScript tarafından görülen değerler değişir.</p>
+      <p id="error" class="error" role="alert"></p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th scope="col" data-i18n="field">Alan</th><th scope="col" data-i18n="expected">Beklenen</th><th scope="col" data-i18n="observed">Gözlenen</th><th scope="col" data-i18n="status">Durum</th></tr></thead>
+          <tbody id="rows"></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

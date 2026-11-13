@@ -1,0 +1,16 @@
+{
+  "name": "@llcforge/veneer-crawlee",
+  "version": "0.1.0",
+  "description": "Crawlee browser-pool hooks: one coherent Veneer fingerprint per session or browser.",
+  "license": "MIT",
+  "repository": { "type": "git", "url": "git+https://github.com/LLCForge/Veneer.git", "directory": "packages/crawlee" },
+  "keywords": ["veneer", "fingerprint", "crawlee", "browser-pool", "scraping"],
+  "main": "index.js",
+  "types": "index.d.ts",
+  "files": ["index.js", "index.d.ts"],
+  "engines": { "node": ">=20" },
+  "dependencies": { "@llcforge/veneer": "^0.1.0" },
+  "peerDependencies": { "crawlee": ">=3.5" },
+  "peerDependenciesMeta": { "crawlee": { "optional": true } },
+  "scripts": { "test": "node --test \"test/*.test.js\"" }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "Meta Quest Browser",
+  "engine": "chromium",
+  "toolbar": {
+    "desktop": 0,
+    "mobile": 0
+  },
+  "versions": [
+    {"major":40,"full":"40.0.0.1.89","chromium":138,"chromiumFull":"138.0.0.0","weight":100}
+  ],
+  "ua": {
+    "horizonos": "Mozilla/5.0 (X11; Linux x86_64; Quest 3) AppleWebKit/537.36 (KHTML, like Gecko) OculusBrowser/{full} SamsungBrowser/4.0 Chrome/{chromium}.0.0.0 VR Safari/537.36"
+  }
+}

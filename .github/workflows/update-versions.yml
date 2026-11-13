@@ -1,0 +1,32 @@
+name: Update browser versions
+
+on:
+  schedule:
+    - cron: '0 6 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: node scripts/update-versions.mjs
+      - run: rustup show
+      - run: cargo test -p veneer
+      - uses: peter-evans/create-pull-request@v7
+        with:
+          branch: data/browser-versions
+          commit-message: 'data: update browser versions from official release feeds'
+          title: 'data: update browser versions'
+          body: |
+            Automated weekly refresh of desktop Chrome, Edge, Firefox and Brave versions
+            from the official release feeds. The full test suite passed with the new data.
+          labels: data
+          delete-branch: true

@@ -1,0 +1,6 @@
+target
+**/node_modules
+packages/veneer/wasm
+.git
+.github
+assets

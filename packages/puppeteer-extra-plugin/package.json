@@ -1,0 +1,37 @@
+{
+  "name": "@llcforge/puppeteer-extra-plugin-veneer",
+  "version": "0.1.0",
+  "description": "puppeteer-extra plugin that applies a coherent Veneer profile to every page.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LLCForge/Veneer.git",
+    "directory": "packages/puppeteer-extra-plugin"
+  },
+  "keywords": [
+    "veneer",
+    "fingerprint",
+    "puppeteer",
+    "puppeteer-extra",
+    "puppeteer-extra-plugin"
+  ],
+  "main": "index.js",
+  "types": "index.d.ts",
+  "files": [
+    "index.js",
+    "index.d.ts"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@llcforge/veneer": "^0.1.0",
+    "puppeteer-extra-plugin": "^3.2.3"
+  },
+  "peerDependencies": {
+    "puppeteer-extra": ">=3.3"
+  },
+  "scripts": {
+    "test": "node --test \"test/*.test.js\""
+  }
+}

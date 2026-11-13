@@ -1,0 +1,7 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <PackageId>Veneer</PackageId>
+    <Description>Coherent browser fingerprint profiles, backed by the Veneer Rust core (veneer_ffi).</Description>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+</Project>

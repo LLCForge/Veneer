@@ -1,0 +1,45 @@
+[
+  {
+    "id": "linux-laptop-uhd620",
+    "os": "linux",
+    "kind": "laptop",
+    "weight": 25,
+    "browsers": {"chrome":52,"firefox":43,"brave":5,"opera":3},
+    "cores": [[8,100]],
+    "memory": [[8,50],[16,50]],
+    "touchPoints": 0,
+    "screens": [
+      {"width":1920,"height":1080,"dpr":1,"weight":55},
+      {"width":1366,"height":768,"dpr":1,"weight":20},
+      {"width":1600,"height":900,"dpr":1,"weight":10},
+      {"width":1920,"height":1200,"dpr":1,"weight":10},
+      {"width":2560,"height":1440,"dpr":1,"weight":5}
+    ],
+    "webgl": {
+      "chromium": {"vendor":"Google Inc. (Intel)","renderer":"ANGLE (Intel, Mesa Intel(R) UHD Graphics 620 (KBL GT2), OpenGL 4.6)"},
+      "gecko": {"vendor":"Intel","renderer":"Intel(R) HD Graphics, or similar"}
+    }
+  },
+  {
+    "id": "linux-desktop-rtx3060",
+    "os": "linux",
+    "kind": "desktop",
+    "weight": 15,
+    "browsers": {"chrome":52,"firefox":43,"brave":5,"opera":3},
+    "cores": [[12,50],[16,50]],
+    "memory": [[16,40],[32,60]],
+    "touchPoints": 0,
+    "screens": [
+      {"width":1920,"height":1080,"dpr":1,"weight":45},
+      {"width":2560,"height":1440,"dpr":1,"weight":30},
+      {"width":3440,"height":1440,"dpr":1,"weight":8},
+      {"width":1920,"height":1080,"dpr":2,"weight":7},
+      {"width":1920,"height":1200,"dpr":1,"weight":6},
+      {"width":1680,"height":1050,"dpr":1,"weight":4}
+    ],
+    "webgl": {
+      "chromium": {"vendor":"Google Inc. (NVIDIA Corporation)","renderer":"ANGLE (NVIDIA Corporation, NVIDIA GeForce RTX 3060/PCIe/SSE2, OpenGL 4.5.0)"},
+      "gecko": {"vendor":"NVIDIA Corporation","renderer":"NVIDIA GeForce GTX 980, or similar"}
+    }
+  }
+]

@@ -1,0 +1,110 @@
+[
+  {
+    "id": "android-pixel-6a",
+    "os": "android",
+    "kind": "phone",
+    "model": "Pixel 6a",
+    "weight": 15,
+    "osVersions": ["12","13","14","15","16","17"],
+    "browsers": {"chrome":95,"brave":5},
+    "cores": [[8,100]],
+    "memory": [[6,100]],
+    "touchPoints": 5,
+    "screens": [
+      {"width":412,"height":915,"dpr":2.625,"weight":100}
+    ],
+    "webgl": {
+      "chromium": {"vendor":"ARM","renderer":"Mali-G78"}
+    }
+  },
+  {
+    "id": "android-pixel-7a",
+    "os": "android",
+    "kind": "phone",
+    "model": "Pixel 7a",
+    "weight": 40,
+    "osVersions": ["13","14","15","16","17"],
+    "browsers": {"chrome":95,"brave":5},
+    "cores": [[8,100]],
+    "memory": [[8,100]],
+    "touchPoints": 5,
+    "screens": [
+      {"width":412,"height":915,"dpr":2.625,"weight":100}
+    ],
+    "webgl": {
+      "chromium": {"vendor":"ARM","renderer":"Mali-G710"}
+    }
+  },
+  {
+    "id": "android-pixel-8a",
+    "os": "android",
+    "kind": "phone",
+    "model": "Pixel 8a",
+    "weight": 15,
+    "osVersions": ["14","15","16","17"],
+    "browsers": {"chrome":95,"brave":5},
+    "cores": [[9,100]],
+    "memory": [[8,100]],
+    "touchPoints": 5,
+    "screens": [
+      {"width":412,"height":915,"dpr":2.625,"weight":100}
+    ],
+    "webgl": {
+      "chromium": {"vendor":"ARM","renderer":"Mali-G715"}
+    }
+  },
+  {
+    "id": "android-pixel-8-pro",
+    "os": "android",
+    "kind": "phone",
+    "model": "Pixel 8 Pro",
+    "weight": 15,
+    "osVersions": ["14","15","16","17"],
+    "browsers": {"chrome":95,"brave":5},
+    "cores": [[9,100]],
+    "memory": [[12,100]],
+    "touchPoints": 5,
+    "screens": [
+      {"width":448,"height":997,"dpr":2.25,"weight":100}
+    ],
+    "webgl": {
+      "chromium": {"vendor":"ARM","renderer":"Mali-G715"}
+    }
+  },
+  {
+    "id": "android-pixel-9-pro-xl",
+    "os": "android",
+    "kind": "phone",
+    "model": "Pixel 9 Pro XL",
+    "weight": 15,
+    "osVersions": ["14","15","16","17"],
+    "browsers": {"chrome":95,"brave":5},
+    "cores": [[8,100]],
+    "memory": [[16,100]],
+    "touchPoints": 5,
+    "screens": [
+      {"width":448,"height":997,"dpr":2.25,"weight":100}
+    ],
+    "webgl": {
+      "chromium": {"vendor":"ARM","renderer":"Mali-G715"}
+    }
+  },
+  {
+    "id": "android-pixel-9a",
+    "os": "android",
+    "kind": "phone",
+    "model": "Pixel 9a",
+    "weight": 15,
+    "osVersions": ["15","16","17"],
+    "browsers": {"chrome":95,"brave":5},
+    "cores": [[8,100]],
+    "memory": [[8,100]],
+    "touchPoints": 5,
+    "screens": [
+      {"width":412,"height":924,"dpr":2.625,"weight":100}
+    ],
+    "webgl": {
+      "chromium": {"vendor":"ARM","renderer":"Mali-G715"}
+    }
+  }
+]

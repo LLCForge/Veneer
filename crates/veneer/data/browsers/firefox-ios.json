@@ -1,0 +1,16 @@
+{
+  "name": "Firefox for iOS",
+  "engine": "webkit",
+  "maxCores": 8,
+  "toolbar": {
+    "desktop": 0,
+    "mobile": 120
+  },
+  "versions": [
+    {"major":160,"full":"160.1","weight":60},
+    {"major":160,"full":"160.0","weight":40}
+  ],
+  "ua": {
+    "ios": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/{full} Mobile/15E148 Safari/604.1"
+  }
+}

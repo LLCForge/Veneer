@@ -1,0 +1,17 @@
+{
+  "name": "Instagram in-app browser",
+  "engine": "webkit",
+  "maxCores": 8,
+  "toolbar": {
+    "desktop": 0,
+    "mobile": 100
+  },
+  "versions": [
+    {"major":452,"full":"452.0.1.39.54","build":"1093431980","weight":50},
+    {"major":451,"full":"451.0.0.37.60","build":"1088109557","weight":30},
+    {"major":450,"full":"450.1.0.35.61","build":"1084815185","weight":20}
+  ],
+  "ua": {
+    "ios": "Mozilla/5.0 (iPhone; CPU iPhone OS {osVersion_} like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/{osBuild} Instagram {full} ({hwModel}; iOS {osVersion_}; {locale_}; {lang}; scale={scale}; {screenPx}; IABMV/1; {build}) Safari/604.1"
+  }
+}

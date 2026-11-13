@@ -1,0 +1,34 @@
+[
+  {
+    "id": "samsung-tizen-tv",
+    "os": "tizen",
+    "kind": "tv",
+    "weight": 3,
+    "browsers": {"samsung-tv":100},
+    "cores": [[4,100]],
+    "memory": [[2,50],[4,50]],
+    "touchPoints": 0,
+    "screens": [
+      {"width":1920,"height":1080,"dpr":1,"weight":100}
+    ],
+    "webgl": {
+      "chromium": {"vendor":"ARM","renderer":"Mali-G52"}
+    }
+  },
+  {
+    "id": "lg-webos-tv",
+    "os": "webos",
+    "kind": "tv",
+    "weight": 2,
+    "browsers": {"lg-tv":100},
+    "cores": [[4,100]],
+    "memory": [[2,50],[4,50]],
+    "touchPoints": 0,
+    "screens": [
+      {"width":1920,"height":1080,"dpr":1,"weight":100}
+    ],
+    "webgl": {
+      "chromium": {"vendor":"ARM","renderer":"Mali-G52"}
+    }
+  }
+]

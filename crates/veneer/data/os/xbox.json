@@ -1,0 +1,15 @@
+{
+  "name": "Xbox OS",
+  "platform": "Win32",
+  "chPlatform": "Windows",
+  "architecture": "x86",
+  "bitness": "64",
+  "insets": {
+    "top": 0,
+    "bottom": 0
+  },
+  "versions": [
+    {"name":"10","platformVersion":"10.0.0","weight":100}
+  ],
+  "fonts": ["Arial","Courier New","Segoe UI","Segoe UI Emoji","Segoe UI Symbol","Times New Roman","Verdana"]
+}

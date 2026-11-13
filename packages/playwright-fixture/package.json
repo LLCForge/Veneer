@@ -1,0 +1,18 @@
+{
+  "name": "@llcforge/veneer-playwright",
+  "version": "0.1.0",
+  "description": "Playwright Test fixture: test.use({ veneer: { os: 'macos' } }).",
+  "license": "MIT",
+  "repository": { "type": "git", "url": "git+https://github.com/LLCForge/Veneer.git", "directory": "packages/playwright-fixture" },
+  "keywords": ["veneer", "fingerprint", "playwright", "playwright-test", "fixture"],
+  "main": "index.js",
+  "types": "index.d.ts",
+  "files": ["index.js", "index.d.ts"],
+  "engines": { "node": ">=20" },
+  "dependencies": { "@llcforge/veneer": "^0.1.0" },
+  "peerDependencies": { "@playwright/test": ">=1.40" },
+  "scripts": {
+    "test": "node --test \"test/*.test.js\"",
+    "test:e2e": "playwright test -c test/e2e"
+  }
+}

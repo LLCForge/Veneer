@@ -1,0 +1,254 @@
+[
+  {
+    "id": "android-xiaomi-14",
+    "os": "android",
+    "kind": "phone",
+    "model": "23127PN0CG",
+    "weight": 40,
+    "osVersions": ["14","15","16"],
+    "browsers": {"chrome":100},
+    "cores": [[8,100]],
+    "memory": [[12,85],[16,10],[8,5]],
+    "touchPoints": 5,
+    "screens": [
+      {"width":400,"height":890,"dpr":3,"weight":100}
+    ],
+    "webgl": {
+      "chromium": {"vendor":"Qualcomm","renderer":"Adreno (TM) 750"}
+    }
+  },
+  {
+    "id": "android-xiaomi-14t",
+    "os": "android",
+    "kind": "phone",
+    "model": "2406APNFAG",
+    "weight": 15,
+    "osVersions": ["14","15","16"],
+    "browsers": {"chrome":100},
+    "cores": [[8,100]],
+    "memory": [[12,100]],
+    "touchPoints": 5,
+    "screens": [
+      {"width":376,"height":835,"dpr":3.25,"weight":100}
+    ],
+    "webgl": {
+      "chromium": {"vendor":"ARM","renderer":"Mali-G615 MC6"}
+    }
+  },
+  {
+    "id": "android-xiaomi-14t-pro",
+    "os": "android",
+    "kind": "phone",
+    "model": "2407FPN8EG",
+    "weight": 15,
+    "osVersions": ["14","15","16"],
+    "browsers": {"chrome":100},
+    "cores": [[8,100]],
+    "memory": [[12,90],[16,10]],
+    "touchPoints": 5,
+    "screens": [
+      {"width":376,"height":835,"dpr":3.25,"weight":100}
+    ],
+    "webgl": {
+      "chromium": {"vendor":"ARM","renderer":"Mali-G720-Immortalis MC12"}
+    }
+  },
+  {
+    "id": "android-xiaomi-13t",
+    "os": "android",
+    "kind": "phone",
+    "model": "2306EPN60G",
+    "weight": 15,
+    "osVersions": ["13","14","15","16"],
+    "browsers": {"chrome":100},
+    "cores": [[8,100]],
+    "memory": [[8,40],[12,60]],
+    "touchPoints": 5,
+    "screens": [
+      {"width":407,"height":904,"dpr":3,"weight":100}
+    ],
+    "webgl": {
+      "chromium": {"vendor":"ARM","renderer":"Mali-G610 MC6"}
+    }
+  },
+  {
+    "id": "android-xiaomi-13t-pro",
+    "os": "android",
+    "kind": "phone",
+    "model": "23078PND5G",
+    "weight": 15,
+    "osVersions": ["13","14","15","16"],
+    "browsers": {"chrome":100},
+    "cores": [[8,100]],
+    "memory": [[12,75],[16,25]],
+    "touchPoints": 5,
+    "screens": [
+      {"width":407,"height":904,"dpr":3,"weight":100}
+    ],
+    "webgl": {
+      "chromium": {"vendor":"ARM","renderer":"Mali-G715-Immortalis MC11"}
+    }
+  },
+  {
+    "id": "android-xiaomi-15",
+    "os": "android",
+    "kind": "phone",
+    "model": "24129PN74G",
+    "weight": 15,
+    "osVersions": ["15","16"],
+    "browsers": {"chrome":100},
+    "cores": [[8,100]],
+    "memory": [[12,90],[16,10]],
+    "touchPoints": 5,
+    "screens": [
+      {"width":370,"height":822,"dpr":3.25,"weight":100}
+    ],
+    "webgl": {
+      "chromium": {"vendor":"Qualcomm","renderer":"Adreno (TM) 830"}
+    }
+  },
+  {
+    "id": "android-redmi-note-13-pro-5g",
+    "os": "android",
+    "kind": "phone",
+    "model": "2312DRA50G",
+    "weight": 40,
+    "osVersions": ["13","14","15","16"],
+    "browsers": {"chrome":100},
+    "cores": [[8,100]],
+    "memory": [[8,60],[12,35],[16,5]],
+    "touchPoints": 5,
+    "screens": [
+      {"width":407,"height":904,"dpr":3,"weight":100}
+    ],
+    "webgl": {
+      "chromium": {"vendor":"Qualcomm","renderer":"Adreno (TM) 710"}
+    }
+  },
+  {
+    "id": "android-redmi-note-12",
+    "os": "android",
+    "kind": "phone",
+    "model": "23021RAAEG",
+    "weight": 40,
+    "osVersions": ["13","14","15"],
+    "browsers": {"chrome":100},
+    "cores": [[8,100]],
+    "memory": [[4,35],[6,30],[8,35]],
+    "touchPoints": 5,
+    "screens": [
+      {"width":393,"height":873,"dpr":2.75,"weight":100}
+    ],
+    "webgl": {
+      "chromium": {"vendor":"Qualcomm","renderer":"Adreno (TM) 610"}
+    }
+  },
+  {
+    "id": "android-redmi-note-12-5g",
+    "os": "android",
+    "kind": "phone",
+    "model": "22111317G",
+    "weight": 15,
+    "osVersions": ["12","13","14"],
+    "browsers": {"chrome":100},
+    "cores": [[8,100]],
+    "memory": [[4,30],[6,35],[8,35]],
+    "touchPoints": 5,
+    "screens": [
+      {"width":393,"height":873,"dpr":2.75,"weight":100}
+    ],
+    "webgl": {
+      "chromium": {"vendor":"Qualcomm","renderer":"Adreno (TM) 619"}
+    }
+  },
+  {
+    "id": "android-redmi-13c",
+    "os": "android",
+    "kind": "phone",
+    "model": "23106RN0DA",
+    "weight": 40,
+    "osVersions": ["13","14","15"],
+    "browsers": {"chrome":100},
+    "cores": [[8,100]],
+    "memory": [[4,40],[6,30],[8,30]],
+    "touchPoints": 5,
+    "screens": [
+      {"width":360,"height":800,"dpr":2,"weight":100}
+    ],
+    "webgl": {
+      "chromium": {"vendor":"ARM","renderer":"Mali-G52 MC2"}
+    }
+  },
+  {
+    "id": "android-redmi-12",
+    "os": "android",
+    "kind": "phone",
+    "model": "23053RN02A",
+    "weight": 40,
+    "osVersions": ["13","14","15"],
+    "browsers": {"chrome":100},
+    "cores": [[8,100]],
+    "memory": [[4,35],[6,25],[8,40]],
+    "touchPoints": 5,
+    "screens": [
+      {"width":393,"height":895,"dpr":2.75,"weight":100}
+    ],
+    "webgl": {
+      "chromium": {"vendor":"ARM","renderer":"Mali-G52 MC2"}
+    }
+  },
+  {
+    "id": "android-poco-x6-pro",
+    "os": "android",
+    "kind": "phone",
+    "model": "2311DRK48G",
+    "weight": 40,
+    "osVersions": ["14","15","16"],
+    "browsers": {"chrome":100},
+    "cores": [[8,100]],
+    "memory": [[8,55],[12,45]],
+    "touchPoints": 5,
+    "screens": [
+      {"width":407,"height":904,"dpr":3,"weight":100}
+    ],
+    "webgl": {
+      "chromium": {"vendor":"ARM","renderer":"Mali-G615 MC6"}
+    }
+  },
+  {
+    "id": "android-poco-f6",
+    "os": "android",
+    "kind": "phone",
+    "model": "24069PC21G",
+    "weight": 15,
+    "osVersions": ["14","15","16"],
+    "browsers": {"chrome":100},
+    "cores": [[8,100]],
+    "memory": [[8,50],[12,50]],
+    "touchPoints": 5,
+    "screens": [
+      {"width":407,"height":904,"dpr":3,"weight":100}
+    ],
+    "webgl": {
+      "chromium": {"vendor":"Qualcomm","renderer":"Adreno (TM) 735"}
+    }
+  },
+  {
+    "id": "android-poco-m6-pro",
+    "os": "android",
+    "kind": "phone",
+    "model": "2312FPCA6G",
+    "weight": 15,
+    "osVersions": ["13","14","15","16"],
+    "browsers": {"chrome":100},
+    "cores": [[8,100]],
+    "memory": [[8,60],[12,40]],
+    "touchPoints": 5,
+    "screens": [
+      {"width":393,"height":873,"dpr":2.75,"weight":100}
+    ],
+    "webgl": {
+      "chromium": {"vendor":"ARM","renderer":"Mali-G57 MC2"}
+    }
+  }
+]

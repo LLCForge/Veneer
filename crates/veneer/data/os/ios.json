@@ -1,0 +1,26 @@
+{
+  "name": "iOS",
+  "platform": "iPhone",
+  "insets": {
+    "top": 0,
+    "bottom": 0
+  },
+  "versions": [
+    {"name":"15.8","platformVersion":"15.8.0","weight":1,"uaToken":"15_8","pins":{"safari":"15.6"},"excludeBrowsers":["chrome-ios","firefox-ios","instagram","facebook","gsa","edge-ios","tiktok","twitter","linkedin","line"]},
+    {"name":"16.7","platformVersion":"16.7.0","weight":2,"uaToken":"16_7","pins":{"safari":"16.6"},"excludeBrowsers":["chrome-ios","firefox-ios","instagram","facebook","edge-ios","twitter","linkedin","line"]},
+    {"name":"17.7","platformVersion":"17.7.0","weight":3,"uaToken":"17_7","build":"21H16","pins":{"safari":"17.6"}},
+    {"name":"18.7","platformVersion":"18.7.0","weight":12,"uaToken":"18_7","build":"22H20","pins":{"safari":"18.6"}},
+    {"name":"26.0","platformVersion":"26.0.0","weight":2,"uaToken":"18_6","build":"23A341","pins":{"safari":"26.0"}},
+    {"name":"26.2","platformVersion":"26.2.0","weight":4,"uaToken":"18_7","build":"23C55","pins":{"safari":"26.2"}},
+    {"name":"26.3","platformVersion":"26.3.0","weight":3,"uaToken":"18_7","build":"23D127","pins":{"safari":"26.3"}},
+    {"name":"26.4","platformVersion":"26.4.0","weight":6,"uaToken":"18_7","build":"23E246","pins":{"safari":"26.4"}},
+    {"name":"26.5","platformVersion":"26.5.0","weight":12,"uaToken":"18_7","build":"23F77","pins":{"safari":"26.5"}},
+    {"name":"26.5.2","platformVersion":"26.5.2","weight":6,"uaToken":"18_7","build":"23F84","pins":{"safari":"26.5.2"}},
+    {"name":"26.6","platformVersion":"26.6.0","weight":6,"uaToken":"18_7","build":"23G71","pins":{"safari":"26.6"}},
+    {"name":"26.6.1","platformVersion":"26.6.1","weight":5,"uaToken":"18_7","build":"23G83","pins":{"safari":"26.6.1"}},
+    {"name":"26.6.2","platformVersion":"26.6.2","weight":10,"uaToken":"18_7","build":"23G90","pins":{"safari":"26.6.2"}},
+    {"name":"27.0","platformVersion":"27.0.0","weight":25,"uaToken":"18_7","build":"24A437","pins":{"safari":"27.0"}},
+    {"name":"27.2","platformVersion":"27.2.0","weight":30,"uaToken":"18_7","build":"24B119","pins":{"safari":"27.2"}}
+  ],
+  "fonts": ["Academy Engraved LET","American Typewriter","Arial","Arial Hebrew","Avenir","Avenir Next","Baskerville","Bodoni 72","Chalkboard SE","Charter","Cochin","Copperplate","Courier New","Didot","Futura","Georgia","Gill Sans","Helvetica","Helvetica Neue","Hoefler Text","Marker Felt","Menlo","Noteworthy","Optima","Palatino","Papyrus","Party LET","Rockwell","Savoye LET","Snell Roundhand","Thonburi","Times New Roman","Trebuchet MS","Verdana","Zapfino"]
+}

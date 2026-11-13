@@ -1,0 +1,25 @@
+# Rust
+/target
+
+# Node
+node_modules/
+*.tgz
+packages/veneer/wasm/
+examples/templates/playwright-ts/dist/
+
+# Test output
+test-results/
+playwright-report/
+.pytest_cache/
+
+# Language bindings build output
+bindings/dotnet/**/bin/
+bindings/dotnet/**/obj/
+bindings/java/target/
+__pycache__/
+*.egg-info/
+.venv/
+
+# Local tooling and notes (not part of the project)
+.impeccable/
+ROADMAP.tr.md

@@ -1,0 +1,23 @@
+{
+  "name": "Android",
+  "platform": "Linux armv81",
+  "chPlatform": "Android",
+  "architecture": "",
+  "bitness": "",
+  "geckoPlatform": "Linux aarch64",
+  "geckoOscpu": "Linux aarch64",
+  "geckoAppVersion": "5.0 (Android {osVersion})",
+  "insets": {
+    "top": 0,
+    "bottom": 0
+  },
+  "versions": [
+    {"name":"12","platformVersion":"12.0.0","weight":4},
+    {"name":"13","platformVersion":"13.0.0","weight":8},
+    {"name":"14","platformVersion":"14.0.0","weight":20},
+    {"name":"15","platformVersion":"15.0.0","weight":28},
+    {"name":"16","platformVersion":"16.0.0","weight":30},
+    {"name":"17","platformVersion":"17.0.0","weight":10}
+  ],
+  "fonts": ["Carrois Gothic SC","Coming Soon","Cutive Mono","Dancing Script","Droid Sans Mono","Noto Color Emoji","Noto Sans","Noto Serif","Roboto"]
+}

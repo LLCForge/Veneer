@@ -1,0 +1,44 @@
+{
+  "name": "@llcforge/veneer-cypress",
+  "version": "0.1.0",
+  "description": "Cypress plugin: browser launch flags, Firefox prefs, user agent, viewport and init script from a Veneer profile.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LLCForge/Veneer.git",
+    "directory": "packages/cypress"
+  },
+  "keywords": [
+    "veneer",
+    "fingerprint",
+    "cypress",
+    "cypress-plugin"
+  ],
+  "main": "index.js",
+  "types": "index.d.ts",
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "support.js"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@llcforge/veneer": "^0.1.0"
+  },
+  "peerDependencies": {
+    "cypress": ">=12"
+  },
+  "scripts": {
+    "test": "node --test \"test/*.test.js\""
+  },
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "default": "./index.js"
+    },
+    "./support": "./support.js",
+    "./package.json": "./package.json"
+  }
+}

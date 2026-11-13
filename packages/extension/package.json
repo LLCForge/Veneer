@@ -1,0 +1,12 @@
+{
+  "name": "@llcforge/veneer-extension",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Manifest V3 extension that applies a Veneer profile to a tab in your own Chromium browser, for testing.",
+  "license": "MIT",
+  "repository": { "type": "git", "url": "git+https://github.com/LLCForge/Veneer.git", "directory": "packages/extension" },
+  "bin": { "veneer-extension-bundle": "bundle.js" },
+  "engines": { "node": ">=20" },
+  "dependencies": { "@llcforge/veneer": "^0.1.0" },
+  "scripts": { "test": "node --test \"test/*.test.js\"" }
+}

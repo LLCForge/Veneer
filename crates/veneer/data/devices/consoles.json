@@ -1,0 +1,60 @@
+[
+  {
+    "id": "xbox-series-x",
+    "os": "xbox",
+    "kind": "console",
+    "weight": 2,
+    "browsers": {"edge":100},
+    "cores": [[8,100]],
+    "memory": [[8,100]],
+    "touchPoints": 0,
+    "screens": [
+      {"width":1920,"height":1080,"dpr":1,"weight":100}
+    ],
+    "webgl": {
+      "chromium": {"vendor":"Google Inc. (AMD)","renderer":"ANGLE (AMD, AMD Radeon(TM) Graphics Direct3D11 vs_5_0 ps_5_0, D3D11)"}
+    }
+  },
+  {
+    "id": "playstation-5",
+    "os": "playstation",
+    "kind": "console",
+    "weight": 2,
+    "browsers": {"playstation":100},
+    "cores": [[8,100]],
+    "memory": [[8,100]],
+    "touchPoints": 0,
+    "screens": [
+      {"width":1920,"height":1080,"dpr":1,"weight":100}
+    ],
+    "webgl": {}
+  },
+  {
+    "id": "playstation-4",
+    "os": "playstation",
+    "kind": "console",
+    "weight": 1,
+    "browsers": {"playstation4":100},
+    "cores": [[8,100]],
+    "memory": [[8,100]],
+    "touchPoints": 0,
+    "screens": [
+      {"width":1920,"height":1080,"dpr":1,"weight":100}
+    ],
+    "webgl": {}
+  },
+  {
+    "id": "nintendo-switch",
+    "os": "nintendo",
+    "kind": "console",
+    "weight": 1,
+    "browsers": {"nintendo":100},
+    "cores": [[4,100]],
+    "memory": [[4,100]],
+    "touchPoints": 0,
+    "screens": [
+      {"width":1280,"height":720,"dpr":1,"weight":100}
+    ],
+    "webgl": {}
+  }
+]

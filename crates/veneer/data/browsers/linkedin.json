@@ -1,0 +1,16 @@
+{
+  "name": "LinkedIn in-app browser",
+  "engine": "webkit",
+  "maxCores": 8,
+  "toolbar": {
+    "desktop": 0,
+    "mobile": 100
+  },
+  "versions": [
+    {"major":9,"full":"9.32.4122","weight":60},
+    {"major":9,"full":"9.32.3977","weight":40}
+  ],
+  "ua": {
+    "ios": "Mozilla/5.0 (iPhone; CPU iPhone OS {osUa} like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 [LinkedInApp]/{full}"
+  }
+}

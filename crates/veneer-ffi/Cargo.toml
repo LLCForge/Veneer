@@ -1,0 +1,18 @@
+[package]
+name = "veneer-ffi"
+description = "C ABI for Veneer (JSON in, JSON out) used by the Python, Go, .NET and Java bindings."
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+rust-version.workspace = true
+publish = false
+
+[lib]
+name = "veneer_ffi"
+crate-type = ["cdylib", "staticlib", "rlib"]
+
+[dependencies]
+veneer = { path = "../veneer" }
+serde.workspace = true
+serde_json.workspace = true

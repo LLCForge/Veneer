@@ -1,0 +1,12 @@
+{
+  "name": "Meta Horizon OS",
+  "platform": "Linux armv8l",
+  "insets": {
+    "top": 0,
+    "bottom": 0
+  },
+  "versions": [
+    {"name":"horizon","platformVersion":"","weight":100}
+  ],
+  "fonts": []
+}

@@ -1,0 +1,74 @@
+[
+  {
+    "id": "android-oneplus-13",
+    "os": "android",
+    "kind": "phone",
+    "model": "CPH2649",
+    "weight": 40,
+    "osVersions": ["15","16"],
+    "browsers": {"chrome":100},
+    "cores": [[8,100]],
+    "memory": [[12,55],[16,40],[24,5]],
+    "touchPoints": 5,
+    "screens": [
+      {"width":360,"height":792,"dpr":3,"weight":100}
+    ],
+    "webgl": {
+      "chromium": {"vendor":"Qualcomm","renderer":"Adreno (TM) 830"}
+    }
+  },
+  {
+    "id": "android-oneplus-12r",
+    "os": "android",
+    "kind": "phone",
+    "model": "CPH2609",
+    "weight": 15,
+    "osVersions": ["14","15"],
+    "browsers": {"chrome":100},
+    "cores": [[8,100]],
+    "memory": [[8,40],[12,20],[16,40]],
+    "touchPoints": 5,
+    "screens": [
+      {"width":362,"height":795,"dpr":3.5,"weight":100}
+    ],
+    "webgl": {
+      "chromium": {"vendor":"Qualcomm","renderer":"Adreno (TM) 740"}
+    }
+  },
+  {
+    "id": "android-oneplus-nord-ce-3-lite",
+    "os": "android",
+    "kind": "phone",
+    "model": "CPH2467",
+    "weight": 40,
+    "osVersions": ["13","14","15"],
+    "browsers": {"chrome":100},
+    "cores": [[8,100]],
+    "memory": [[8,100]],
+    "touchPoints": 5,
+    "screens": [
+      {"width":360,"height":800,"dpr":3,"weight":100}
+    ],
+    "webgl": {
+      "chromium": {"vendor":"Qualcomm","renderer":"Adreno (TM) 619"}
+    }
+  },
+  {
+    "id": "android-oneplus-nord-ce4",
+    "os": "android",
+    "kind": "phone",
+    "model": "CPH2613",
+    "weight": 40,
+    "osVersions": ["14","15","16"],
+    "browsers": {"chrome":100},
+    "cores": [[8,100]],
+    "memory": [[8,100]],
+    "touchPoints": 5,
+    "screens": [
+      {"width":360,"height":804,"dpr":3,"weight":100}
+    ],
+    "webgl": {
+      "chromium": {"vendor":"Qualcomm","renderer":"Adreno (TM) 720"}
+    }
+  }
+]

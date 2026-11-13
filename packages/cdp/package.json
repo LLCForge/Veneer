@@ -1,0 +1,14 @@
+{
+  "name": "@llcforge/veneer-cdp",
+  "version": "0.1.0",
+  "description": "Apply a Veneer profile over a raw Chrome DevTools Protocol session, without a framework.",
+  "license": "MIT",
+  "repository": { "type": "git", "url": "git+https://github.com/LLCForge/Veneer.git", "directory": "packages/cdp" },
+  "keywords": ["veneer", "fingerprint", "cdp", "devtools", "chromium"],
+  "main": "index.js",
+  "types": "index.d.ts",
+  "files": ["index.js", "index.d.ts"],
+  "engines": { "node": ">=20" },
+  "dependencies": { "@llcforge/veneer": "^0.1.0" },
+  "scripts": { "test": "node --test \"test/*.test.js\"" }
+}

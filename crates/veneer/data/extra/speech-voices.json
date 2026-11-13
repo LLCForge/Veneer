@@ -1,0 +1,39 @@
+{
+  "windowsLocal": {
+    "en-US": ["Microsoft David - English (United States)", "Microsoft Mark - English (United States)", "Microsoft Zira - English (United States)"],
+    "en-GB": ["Microsoft George - English (Great Britain)", "Microsoft Hazel - English (Great Britain)", "Microsoft Susan - English (Great Britain)"],
+    "en-CA": ["Microsoft Linda - English (Canada)", "Microsoft Richard - English (Canada)"],
+    "de-DE": ["Microsoft Hedda - German (Germany)", "Microsoft Katja - German (Germany)", "Microsoft Stefan - German (Germany)"],
+    "fr-FR": ["Microsoft Hortence - French (France)", "Microsoft Julie - French (France)", "Microsoft Paul - French (France)"],
+    "es-ES": ["Microsoft Helena - Spanish (Spain)", "Microsoft Laura - Spanish (Spain)", "Microsoft Pablo - Spanish (Spain)"],
+    "es-MX": ["Microsoft Raul - Spanish (Mexico)", "Microsoft Sabina - Spanish (Mexico)"],
+    "it-IT": ["Microsoft Cosimo - Italian (Italy)", "Microsoft Elsa - Italian (Italy)"],
+    "nl-NL": ["Microsoft Frank - Dutch (Netherlands)"],
+    "pl-PL": ["Microsoft Adam - Polish (Poland)", "Microsoft Paulina - Polish (Poland)"],
+    "pt-BR": ["Microsoft Daniel - Portuguese (Brazil)", "Microsoft Maria - Portuguese (Brazil)"],
+    "tr-TR": ["Microsoft Tolga - Turkish (Turkey)"],
+    "ja-JP": ["Microsoft Ayumi - Japanese (Japan)", "Microsoft Haruka - Japanese (Japan)", "Microsoft Ichiro - Japanese (Japan)"],
+    "ko-KR": ["Microsoft Heami - Korean (Korea)"]
+  },
+  "chromeNetwork": [
+    ["Google Deutsch", "de-DE"],
+    ["Google US English", "en-US"],
+    ["Google UK English Female", "en-GB"],
+    ["Google UK English Male", "en-GB"],
+    ["Google español", "es-ES"],
+    ["Google español de Estados Unidos", "es-US"],
+    ["Google français", "fr-FR"],
+    ["Google हिन्दी", "hi-IN"],
+    ["Google Bahasa Indonesia", "id-ID"],
+    ["Google italiano", "it-IT"],
+    ["Google 日本語", "ja-JP"],
+    ["Google 한국의", "ko-KR"],
+    ["Google Nederlands", "nl-NL"],
+    ["Google polski", "pl-PL"],
+    ["Google português do Brasil", "pt-BR"],
+    ["Google русский", "ru-RU"],
+    ["Google\u00a0普通话（中国大陆）", "zh-CN"],
+    ["Google\u00a0粤語（香港）", "zh-HK"],
+    ["Google 國語（臺灣）", "zh-TW"]
+  ]
+}

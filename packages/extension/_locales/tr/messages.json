@@ -1,0 +1,13 @@
+{
+  "name": { "message": "Veneer profil deneyicisi" },
+  "description": { "message": "Test için kendi tarayıcınızdaki bir sekmeye Veneer parmak izi profili uygulayın." },
+  "bundleLabel": { "message": "Profil paketi (JSON)" },
+  "bundleHint": { "message": "Oluşturmak için: node bundle.js --os macos --locale tr-TR" },
+  "apply": { "message": "Bu sekmeye uygula" },
+  "detach": { "message": "Kaldır" },
+  "applied": { "message": "$DEVICE$ uygulandı. Sekme yeniden yüklendi.", "placeholders": { "device": { "content": "$1" } } },
+  "detached": { "message": "Kaldırıldı. Sekme yeniden yüklendi." },
+  "noTab": { "message": "Etkin sekme yok." },
+  "badJson": { "message": "Paket geçerli bir JSON değil." },
+  "failed": { "message": "Profil uygulanamadı." }
+}

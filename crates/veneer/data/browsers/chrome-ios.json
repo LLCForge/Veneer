@@ -1,0 +1,16 @@
+{
+  "name": "Chrome for iOS",
+  "engine": "webkit",
+  "maxCores": 8,
+  "toolbar": {
+    "desktop": 0,
+    "mobile": 120
+  },
+  "versions": [
+    {"major":158,"full":"158.0.8127.35","weight":75},
+    {"major":157,"full":"157.0.8103.37","weight":25}
+  ],
+  "ua": {
+    "ios": "Mozilla/5.0 (iPhone; CPU iPhone OS {osVersionFull_} like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/{full} Mobile/15E148 Safari/604.1"
+  }
+}

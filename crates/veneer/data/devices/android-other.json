@@ -1,0 +1,20 @@
+[
+  {
+    "id": "android-redmi-note-13",
+    "os": "android",
+    "kind": "phone",
+    "model": "23129RAA4G",
+    "weight": 60,
+    "osVersions": ["13","14","15"],
+    "browsers": {"chrome":100},
+    "cores": [[8,100]],
+    "memory": [[6,50],[8,50]],
+    "touchPoints": 5,
+    "screens": [
+      {"width":393,"height":873,"dpr":2.75,"weight":100}
+    ],
+    "webgl": {
+      "chromium": {"vendor":"Qualcomm","renderer":"Adreno (TM) 610"}
+    }
+  }
+]

@@ -1,0 +1,128 @@
+[
+  {
+    "id": "android-samsung-galaxy-a55",
+    "os": "android",
+    "kind": "phone",
+    "model": "SM-A556B",
+    "weight": 40,
+    "osVersions": ["17"],
+    "browsers": {"chrome":65,"samsung":35},
+    "cores": [[8,100]],
+    "memory": [[6,25],[8,65],[12,10]],
+    "touchPoints": 5,
+    "screens": [
+      {"width":384,"height":832,"dpr":2.8125,"weight":100}
+    ],
+    "webgl": {
+      "chromium": {"vendor":"Samsung Electronics Co., Ltd.","renderer":"ANGLE ((Samsung Xclipse 530) on Vulkan 1.3.304)"}
+    }
+  },
+  {
+    "id": "android-samsung-galaxy-a35",
+    "os": "android",
+    "kind": "phone",
+    "model": "SM-A356B",
+    "weight": 40,
+    "osVersions": ["14","15","16","17"],
+    "browsers": {"chrome":65,"samsung":35},
+    "cores": [[8,100]],
+    "memory": [[4,10],[6,40],[8,45],[12,5]],
+    "touchPoints": 5,
+    "screens": [
+      {"width":384,"height":832,"dpr":2.8125,"weight":100}
+    ],
+    "webgl": {
+      "chromium": {"vendor":"ARM","renderer":"Mali-G68"}
+    }
+  },
+  {
+    "id": "android-samsung-galaxy-a25",
+    "os": "android",
+    "kind": "phone",
+    "model": "SM-A256B",
+    "weight": 40,
+    "osVersions": ["14","15","16"],
+    "browsers": {"chrome":65,"samsung":35},
+    "cores": [[8,100]],
+    "memory": [[4,20],[6,40],[8,40]],
+    "touchPoints": 5,
+    "screens": [
+      {"width":384,"height":832,"dpr":2.8125,"weight":100}
+    ],
+    "webgl": {
+      "chromium": {"vendor":"ARM","renderer":"Mali-G68"}
+    }
+  },
+  {
+    "id": "android-samsung-galaxy-a34",
+    "os": "android",
+    "kind": "phone",
+    "model": "SM-A346B",
+    "weight": 40,
+    "osVersions": ["13","14","15","16"],
+    "browsers": {"chrome":65,"samsung":35},
+    "cores": [[8,100]],
+    "memory": [[4,10],[6,50],[8,40]],
+    "touchPoints": 5,
+    "screens": [
+      {"width":384,"height":832,"dpr":2.8125,"weight":100}
+    ],
+    "webgl": {
+      "chromium": {"vendor":"ARM","renderer":"Mali-G68 MC4"}
+    }
+  },
+  {
+    "id": "android-samsung-galaxy-s24-fe",
+    "os": "android",
+    "kind": "phone",
+    "model": "SM-S721B",
+    "weight": 15,
+    "osVersions": ["17"],
+    "browsers": {"chrome":65,"samsung":35},
+    "cores": [[10,100]],
+    "memory": [[8,100]],
+    "touchPoints": 5,
+    "screens": [
+      {"width":384,"height":832,"dpr":2.8125,"weight":100}
+    ],
+    "webgl": {
+      "chromium": {"vendor":"Samsung Electronics Co., Ltd.","renderer":"ANGLE ((Samsung Xclipse 940) on Vulkan 1.3.304)"}
+    }
+  },
+  {
+    "id": "android-samsung-galaxy-s24-ultra",
+    "os": "android",
+    "kind": "phone",
+    "model": "SM-S928B",
+    "weight": 40,
+    "osVersions": ["14","15","16","17"],
+    "browsers": {"chrome":65,"samsung":35},
+    "cores": [[8,100]],
+    "memory": [[12,100]],
+    "touchPoints": 5,
+    "screens": [
+      {"width":384,"height":832,"dpr":2.8125,"weight":100}
+    ],
+    "webgl": {
+      "chromium": {"vendor":"Qualcomm","renderer":"Adreno (TM) 750"}
+    }
+  },
+  {
+    "id": "android-samsung-galaxy-s23-ultra",
+    "os": "android",
+    "kind": "phone",
+    "model": "SM-S918B",
+    "weight": 40,
+    "osVersions": ["13","14","15","16","17"],
+    "browsers": {"chrome":65,"samsung":35},
+    "cores": [[8,100]],
+    "memory": [[8,45],[12,55]],
+    "touchPoints": 5,
+    "screens": [
+      {"width":384,"height":824,"dpr":2.8125,"weight":100}
+    ],
+    "webgl": {
+      "chromium": {"vendor":"Qualcomm","renderer":"Adreno (TM) 740"}
+    }
+  }
+]

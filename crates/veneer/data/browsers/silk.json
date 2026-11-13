@@ -1,0 +1,16 @@
+{
+  "name": "Amazon Silk",
+  "engine": "chromium",
+  "toolbar": {
+    "desktop": 0,
+    "mobile": 112
+  },
+  "versions": [
+    {"major":152,"full":"152.7.9","chromium":152,"chromiumFull":"152.0.7977.158","weight":50},
+    {"major":150,"full":"150.7.2","chromium":150,"chromiumFull":"150.0.7871.253","weight":25},
+    {"major":148,"full":"148.4.3","chromium":148,"chromiumFull":"148.0.7778.265","weight":25}
+  ],
+  "ua": {
+    "fireos": "Mozilla/5.0 (Linux; Android {osUa}; {hwModel}) AppleWebKit/537.36 (KHTML, like Gecko) Silk/{full} like Chrome/{chromiumFull} Safari/537.36"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "Linux",
+  "platform": "Linux x86_64",
+  "chPlatform": "Linux",
+  "architecture": "x86",
+  "bitness": "64",
+  "geckoOscpu": "Linux x86_64",
+  "geckoAppVersion": "5.0 (X11)",
+  "insets": {
+    "top": 32,
+    "bottom": 0
+  },
+  "versions": [
+    {"name":"ubuntu-24.04","platformVersion":"","weight":45,"extraFonts":["AR PL UKai CN","AR PL UMing CN","C059","D050000L","DejaVu Sans","DejaVu Sans Mono","DejaVu Serif","Droid Sans Fallback","Liberation Mono","Liberation Sans","Liberation Sans Narrow","Liberation Serif","Nimbus Mono PS","Nimbus Roman","Nimbus Sans","Nimbus Sans Narrow","Noto Color Emoji","Noto Mono","Noto Sans","Noto Sans CJK JP","Noto Sans CJK KR","Noto Sans CJK SC","Noto Sans CJK TC","Noto Sans Mono","Noto Serif","Noto Serif CJK JP","Noto Serif CJK SC","OpenSymbol","P052","Standard Symbols PS","URW Bookman","URW Gothic","Ubuntu","Ubuntu Condensed","Ubuntu Mono","Ubuntu Sans","Ubuntu Sans Mono","Z003"]},
+    {"name":"ubuntu-26.04","platformVersion":"","weight":25,"extraFonts":["AR PL UKai CN","AR PL UMing CN","C059","D050000L","DejaVu Sans","DejaVu Sans Mono","DejaVu Serif","Droid Sans Fallback","FontAwesome","Lato","Liberation Mono","Liberation Sans","Liberation Sans Narrow","Liberation Serif","Nimbus Mono PS","Nimbus Roman","Nimbus Sans","Nimbus Sans Narrow","Noto Color Emoji","Noto Mono","Noto Sans","Noto Sans CJK JP","Noto Sans CJK KR","Noto Sans CJK SC","Noto Sans CJK TC","Noto Sans Mono","Noto Serif","Noto Serif CJK JP","Noto Serif CJK SC","OpenSymbol","P052","Standard Symbols PS","URW Bookman","URW Gothic","Ubuntu","Ubuntu Condensed","Ubuntu Mono","Ubuntu Sans","Ubuntu Sans Mono","Z003"]},
+    {"name":"fedora-44","platformVersion":"","weight":15,"extraFonts":["Noto Color Emoji","Noto Sans","Noto Sans CJK JP","Noto Sans CJK KR","Noto Sans CJK SC","Noto Sans CJK TC","Noto Sans Math","Noto Sans Mono","Noto Serif","Source Code Pro"]},
+    {"name":"debian-13","platformVersion":"","weight":15,"extraFonts":["Cantarell","DejaVu Sans","DejaVu Sans Mono","DejaVu Serif","Symbola"]}
+  ],
+  "fonts": []
+}

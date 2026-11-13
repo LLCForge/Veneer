@@ -1,0 +1,14 @@
+{
+  "name": "Nintendo Browser",
+  "engine": "webkit",
+  "toolbar": {
+    "desktop": 0,
+    "mobile": 0
+  },
+  "versions": [
+    {"major":5,"full":"5.1.0.20393","weight":100}
+  ],
+  "ua": {
+    "nintendo": "Mozilla/5.0 (Nintendo Switch; WifiWebAuthApplet) AppleWebKit/606.4 (KHTML, like Gecko) NF/6.0.1.15.4 NintendoBrowser/{full}"
+  }
+}

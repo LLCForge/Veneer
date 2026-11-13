@@ -1,0 +1,19 @@
+{
+  "name": "Windows",
+  "platform": "Win32",
+  "chPlatform": "Windows",
+  "architecture": "x86",
+  "bitness": "64",
+  "geckoOscpu": "Windows NT 10.0; Win64; x64",
+  "geckoAppVersion": "5.0 (Windows)",
+  "insets": {
+    "top": 0,
+    "bottom": 48
+  },
+  "versions": [
+    {"name":"10","platformVersion":"10.0.0","weight":40,"insets":{"top":0,"bottom":40}},
+    {"name":"11-23H2","platformVersion":"15.0.0","weight":15,"extraFonts":["Segoe Fluent Icons","Segoe UI Variable"]},
+    {"name":"11-24H2","platformVersion":"19.0.0","weight":45,"extraFonts":["Segoe Fluent Icons","Segoe UI Variable"]}
+  ],
+  "fonts": ["Arial","Arial Black","Bahnschrift","Calibri","Cambria","Cambria Math","Candara","Comic Sans MS","Consolas","Constantia","Corbel","Courier New","Ebrima","Franklin Gothic Medium","Gabriola","Gadugi","Georgia","Impact","Ink Free","Javanese Text","Leelawadee UI","Lucida Console","Lucida Sans Unicode","Malgun Gothic","Marlett","Microsoft Himalaya","Microsoft JhengHei","Microsoft New Tai Lue","Microsoft PhagsPa","Microsoft Sans Serif","Microsoft Tai Le","Microsoft YaHei","Microsoft Yi Baiti","MingLiU-ExtB","Mongolian Baiti","MS Gothic","MV Boli","Myanmar Text","Nirmala UI","Palatino Linotype","Segoe MDL2 Assets","Segoe Print","Segoe Script","Segoe UI","Segoe UI Emoji","Segoe UI Historic","Segoe UI Symbol","SimSun","Sitka Text","Sylfaen","Symbol","Tahoma","Times New Roman","Trebuchet MS","Verdana","Webdings","Wingdings","Yu Gothic"]
+}

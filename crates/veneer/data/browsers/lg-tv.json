@@ -1,0 +1,15 @@
+{
+  "name": "LG webOS Browser",
+  "engine": "chromium",
+  "toolbar": {
+    "desktop": 0,
+    "mobile": 0
+  },
+  "versions": [
+    {"major":24,"full":"24","chromium":108,"chromiumFull":"108.0.5359.211","weight":60},
+    {"major":23,"full":"23","chromium":94,"chromiumFull":"94.0.4606.128","weight":40}
+  ],
+  "ua": {
+    "webos": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{chromiumFull} Safari/537.36 WebAppManager"
+  }
+}

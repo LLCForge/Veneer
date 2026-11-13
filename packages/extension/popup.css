@@ -1,0 +1,32 @@
+:root { --bg: #ffffff; --fg: #1a1a1a; --muted: #5b5b5b; --accent: #0f6e5a; --error: #b3261e; }
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #161616; --fg: #ededed; --muted: #a8a8a8; --accent: #4fc3a1; --error: #f2b8b5; }
+}
+body { margin: 0; width: 360px; background: var(--bg); color: var(--fg); font: 14px/1.5 system-ui, sans-serif; }
+main { display: flex; flex-direction: column; gap: 8px; padding: 16px; }
+h1 { margin: 0; font-size: 16px; }
+textarea {
+  font: 12px/1.4 ui-monospace, monospace;
+  background: var(--bg);
+  color: var(--fg);
+  border: 1px solid var(--muted);
+  border-radius: 6px;
+  padding: 8px;
+  resize: vertical;
+}
+.hint { margin: 0; color: var(--muted); font-size: 12px; }
+.row { display: flex; gap: 8px; }
+button {
+  flex: 1;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid var(--accent);
+  background: var(--accent);
+  color: var(--bg);
+  font: inherit;
+  cursor: pointer;
+}
+button#detach { background: transparent; color: var(--accent); }
+button:focus-visible, textarea:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+#status { margin: 0; min-height: 1.5em; }
+#status.error { color: var(--error); }

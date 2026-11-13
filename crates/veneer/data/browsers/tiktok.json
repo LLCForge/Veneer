@@ -1,0 +1,16 @@
+{
+  "name": "TikTok in-app browser",
+  "engine": "webkit",
+  "maxCores": 8,
+  "toolbar": {
+    "desktop": 0,
+    "mobile": 100
+  },
+  "versions": [
+    {"major":46,"full":"46.8.0","weight":60},
+    {"major":46,"full":"46.7.0","weight":40}
+  ],
+  "ua": {
+    "ios": "Mozilla/5.0 (iPhone; CPU iPhone OS {osVersion_} like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Safari/604.1 musical_ly_{full} BytedanceWebview/d8a21c6"
+  }
+}

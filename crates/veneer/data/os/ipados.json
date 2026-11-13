@@ -1,0 +1,20 @@
+{
+  "name": "iPadOS",
+  "platform": "MacIntel",
+  "insets": {
+    "top": 0,
+    "bottom": 0
+  },
+  "versions": [
+    {"name":"16.7","platformVersion":"16.7.0","weight":3,"pins":{"safari":"16.6"}},
+    {"name":"17.7","platformVersion":"17.7.0","weight":5,"pins":{"safari":"17.6"}},
+    {"name":"18.7","platformVersion":"18.7.0","weight":15,"pins":{"safari":"18.6"}},
+    {"name":"26.2","platformVersion":"26.2.0","weight":4,"pins":{"safari":"26.2"}},
+    {"name":"26.4","platformVersion":"26.4.0","weight":6,"pins":{"safari":"26.4"}},
+    {"name":"26.5","platformVersion":"26.5.0","weight":14,"pins":{"safari":"26.5"}},
+    {"name":"26.6","platformVersion":"26.6.0","weight":12,"pins":{"safari":"26.6"}},
+    {"name":"27.0","platformVersion":"27.0.0","weight":22,"pins":{"safari":"27.0"}},
+    {"name":"27.2","platformVersion":"27.2.0","weight":26,"pins":{"safari":"27.2"}}
+  ],
+  "fonts": ["Academy Engraved LET","American Typewriter","Arial","Arial Hebrew","Avenir","Avenir Next","Baskerville","Bodoni 72","Chalkboard SE","Charter","Cochin","Copperplate","Courier New","Didot","Futura","Georgia","Gill Sans","Helvetica","Helvetica Neue","Hoefler Text","Marker Felt","Menlo","Noteworthy","Optima","Palatino","Papyrus","Party LET","Rockwell","Savoye LET","Snell Roundhand","Thonburi","Times New Roman","Trebuchet MS","Verdana","Zapfino"]
+}

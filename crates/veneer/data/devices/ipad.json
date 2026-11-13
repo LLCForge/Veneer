@@ -1,0 +1,36 @@
+[
+  {
+    "id": "ipad-10",
+    "os": "ipados",
+    "kind": "tablet",
+    "weight": 15,
+    "osVersions": ["16.7","17.7","18.7","26.2","26.4","26.5","26.6","27.0","27.2"],
+    "browsers": {"safari":100},
+    "cores": [[6,100]],
+    "memory": [[4,100]],
+    "touchPoints": 5,
+    "screens": [
+      {"width":820,"height":1180,"dpr":2,"weight":100}
+    ],
+    "webgl": {
+      "webkit": {"vendor":"Apple Inc.","renderer":"Apple GPU"}
+    }
+  },
+  {
+    "id": "ipad-pro-11",
+    "os": "ipados",
+    "kind": "tablet",
+    "weight": 10,
+    "osVersions": ["16.7","17.7","18.7","26.2","26.4","26.5","26.6","27.0","27.2"],
+    "browsers": {"safari":100},
+    "cores": [[8,100]],
+    "memory": [[8,100]],
+    "touchPoints": 5,
+    "screens": [
+      {"width":834,"height":1194,"dpr":2,"weight":100}
+    ],
+    "webgl": {
+      "webkit": {"vendor":"Apple Inc.","renderer":"Apple GPU"}
+    }
+  }
+]

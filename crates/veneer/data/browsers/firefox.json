@@ -1,0 +1,17 @@
+{
+  "name": "Mozilla Firefox",
+  "engine": "gecko",
+  "toolbar": {
+    "desktop": 85,
+    "mobile": 112
+  },
+  "versions": [
+    {"major":160,"full":"160.0","weight":100}
+  ],
+  "ua": {
+    "windows": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:{major}.0) Gecko/20100101 Firefox/{major}.0",
+    "macos": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:{major}.0) Gecko/20100101 Firefox/{major}.0",
+    "linux": "Mozilla/5.0 (X11; Linux x86_64; rv:{major}.0) Gecko/20100101 Firefox/{major}.0",
+    "android": "Mozilla/5.0 (Android {osVersion}; {formFx}; rv:{major}.0) Gecko/{major}.0 Firefox/{major}.0"
+  }
+}

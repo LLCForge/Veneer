@@ -1,0 +1,20 @@
+[
+  {
+    "id": "chromebook-uhd600",
+    "os": "chromeos",
+    "kind": "laptop",
+    "weight": 20,
+    "browsers": {"chrome":100},
+    "cores": [[2,40],[4,60]],
+    "memory": [[4,60],[8,40]],
+    "touchPoints": 0,
+    "screens": [
+      {"width":1366,"height":768,"dpr":1,"weight":50},
+      {"width":1536,"height":864,"dpr":1.25,"weight":30},
+      {"width":1920,"height":1080,"dpr":1,"weight":20}
+    ],
+    "webgl": {
+      "chromium": {"vendor":"Google Inc. (Intel)","renderer":"ANGLE (Intel, Mesa Intel(R) UHD Graphics 600 (GLK 2), OpenGL ES 3.2)"}
+    }
+  }
+]

@@ -1,0 +1,328 @@
+[
+  {
+    "id": "android-galaxy-s24",
+    "os": "android",
+    "kind": "phone",
+    "model": "SM-S921U",
+    "weight": 45,
+    "osVersions": ["14","15","16"],
+    "browsers": {"chrome":66,"samsung":28,"firefox":6},
+    "cores": [[8,100]],
+    "memory": [[8,100]],
+    "touchPoints": 5,
+    "screens": [
+      {"width":384,"height":832,"dpr":2.8125,"weight":100}
+    ],
+    "webgl": {
+      "chromium": {"vendor":"Qualcomm","renderer":"Adreno (TM) 750"},
+      "gecko": {"vendor":"Qualcomm","renderer":"Adreno (TM) 750"}
+    }
+  },
+  {
+    "id": "android-galaxy-a54",
+    "os": "android",
+    "kind": "phone",
+    "model": "SM-A546B",
+    "weight": 60,
+    "osVersions": ["13","14","15","16"],
+    "browsers": {"chrome":65,"samsung":35},
+    "cores": [[8,100]],
+    "memory": [[6,40],[8,60]],
+    "touchPoints": 5,
+    "screens": [
+      {"width":384,"height":832,"dpr":2.8125,"weight":100}
+    ],
+    "webgl": {
+      "chromium": {"vendor":"ARM","renderer":"Mali-G68"}
+    }
+  },
+  {
+    "id": "android-galaxy-tab-s9",
+    "os": "android",
+    "kind": "tablet",
+    "model": "SM-X710",
+    "weight": 10,
+    "osVersions": ["13","14","15","16"],
+    "browsers": {"chrome":60,"samsung":40},
+    "cores": [[8,100]],
+    "memory": [[8,70],[12,30]],
+    "touchPoints": 10,
+    "screens": [
+      {"width":1280,"height":800,"dpr":2,"weight":100}
+    ],
+    "webgl": {
+      "chromium": {"vendor":"Qualcomm","renderer":"Adreno (TM) 740"}
+    }
+  },
+  {
+    "id": "android-galaxy-s10",
+    "os": "android",
+    "kind": "phone",
+    "model": "SM-G973U",
+    "weight": 5,
+    "osVersions": ["12"],
+    "browsers": {"chrome":66,"samsung":34},
+    "cores": [[8,100]],
+    "memory": [[8,100]],
+    "touchPoints": 5,
+    "screens": [
+      {"width":360,"height":760,"dpr":3,"weight":100}
+    ],
+    "webgl": {
+      "chromium": {"vendor":"Qualcomm","renderer":"Adreno (TM) 640"}
+    }
+  },
+  {
+    "id": "android-galaxy-s20",
+    "os": "android",
+    "kind": "phone",
+    "model": "SM-G981U",
+    "weight": 6,
+    "osVersions": ["12","13"],
+    "browsers": {"chrome":66,"samsung":34},
+    "cores": [[8,100]],
+    "memory": [[12,100]],
+    "touchPoints": 5,
+    "screens": [
+      {"width":360,"height":800,"dpr":3,"weight":100}
+    ],
+    "webgl": {
+      "chromium": {"vendor":"Qualcomm","renderer":"Adreno (TM) 650"}
+    }
+  },
+  {
+    "id": "android-galaxy-s21",
+    "os": "android",
+    "kind": "phone",
+    "model": "SM-G991U",
+    "weight": 10,
+    "osVersions": ["13","14","15"],
+    "browsers": {"chrome":66,"samsung":34},
+    "cores": [[8,100]],
+    "memory": [[8,100]],
+    "touchPoints": 5,
+    "screens": [
+      {"width":360,"height":800,"dpr":3,"weight":100}
+    ],
+    "webgl": {
+      "chromium": {"vendor":"Qualcomm","renderer":"Adreno (TM) 660"}
+    }
+  },
+  {
+    "id": "android-galaxy-s22",
+    "os": "android",
+    "kind": "phone",
+    "model": "SM-S901U",
+    "weight": 15,
+    "osVersions": ["14","15","16"],
+    "browsers": {"chrome":66,"samsung":34},
+    "cores": [[8,100]],
+    "memory": [[8,100]],
+    "touchPoints": 5,
+    "screens": [
+      {"width":360,"height":780,"dpr":3,"weight":100}
+    ],
+    "webgl": {
+      "chromium": {"vendor":"Qualcomm","renderer":"Adreno (TM) 730"}
+    }
+  },
+  {
+    "id": "android-galaxy-s23",
+    "os": "android",
+    "kind": "phone",
+    "model": "SM-S911U",
+    "weight": 25,
+    "osVersions": ["14","15","16"],
+    "browsers": {"chrome":66,"samsung":34},
+    "cores": [[8,100]],
+    "memory": [[8,100]],
+    "touchPoints": 5,
+    "screens": [
+      {"width":360,"height":780,"dpr":3,"weight":100}
+    ],
+    "webgl": {
+      "chromium": {"vendor":"Qualcomm","renderer":"Adreno (TM) 740"}
+    }
+  },
+  {
+    "id": "android-galaxy-s25",
+    "os": "android",
+    "kind": "phone",
+    "model": "SM-S931U",
+    "weight": 30,
+    "osVersions": ["15","16"],
+    "browsers": {"chrome":66,"samsung":34},
+    "cores": [[8,100]],
+    "memory": [[12,100]],
+    "touchPoints": 5,
+    "screens": [
+      {"width":360,"height":780,"dpr":3,"weight":100}
+    ],
+    "webgl": {
+      "chromium": {"vendor":"Qualcomm","renderer":"Adreno (TM) 830"}
+    }
+  },
+  {
+    "id": "android-galaxy-s25-ultra",
+    "os": "android",
+    "kind": "phone",
+    "model": "SM-S938U",
+    "weight": 20,
+    "osVersions": ["15","16"],
+    "browsers": {"chrome":66,"samsung":34},
+    "cores": [[8,100]],
+    "memory": [[12,100]],
+    "touchPoints": 5,
+    "screens": [
+      {"width":384,"height":832,"dpr":2.8125,"weight":100}
+    ],
+    "webgl": {
+      "chromium": {"vendor":"Qualcomm","renderer":"Adreno (TM) 830"}
+    }
+  },
+  {
+    "id": "android-galaxy-s26",
+    "os": "android",
+    "kind": "phone",
+    "model": "SM-S942U",
+    "weight": 30,
+    "osVersions": ["16","17"],
+    "browsers": {"chrome":66,"samsung":34},
+    "cores": [[8,100]],
+    "memory": [[12,100]],
+    "touchPoints": 5,
+    "screens": [
+      {"width":360,"height":780,"dpr":3,"weight":100}
+    ],
+    "webgl": {
+      "chromium": {"vendor":"Qualcomm","renderer":"Adreno (TM) 840"}
+    }
+  },
+  {
+    "id": "android-galaxy-s26-plus",
+    "os": "android",
+    "kind": "phone",
+    "model": "SM-S947U",
+    "weight": 15,
+    "osVersions": ["16","17"],
+    "browsers": {"chrome":66,"samsung":34},
+    "cores": [[8,100]],
+    "memory": [[12,100]],
+    "touchPoints": 5,
+    "screens": [
+      {"width":384,"height":832,"dpr":2.8125,"weight":100}
+    ],
+    "webgl": {
+      "chromium": {"vendor":"Qualcomm","renderer":"Adreno (TM) 840"}
+    }
+  },
+  {
+    "id": "android-galaxy-s26-ultra",
+    "os": "android",
+    "kind": "phone",
+    "model": "SM-S948U",
+    "weight": 25,
+    "osVersions": ["16","17"],
+    "browsers": {"chrome":62,"samsung":32,"firefox":6},
+    "cores": [[8,100]],
+    "memory": [[12,70],[16,30]],
+    "touchPoints": 5,
+    "screens": [
+      {"width":384,"height":832,"dpr":2.8125,"weight":100}
+    ],
+    "webgl": {
+      "chromium": {"vendor":"Qualcomm","renderer":"Adreno (TM) 840"},
+      "gecko": {"vendor":"Qualcomm","renderer":"Adreno (TM) 840"}
+    }
+  },
+  {
+    "id": "android-galaxy-z-fold8-ultra",
+    "os": "android",
+    "kind": "phone",
+    "model": "SM-F976U",
+    "weight": 6,
+    "osVersions": ["17"],
+    "browsers": {"chrome":66,"samsung":34},
+    "cores": [[8,100]],
+    "memory": [[12,70],[16,30]],
+    "touchPoints": 5,
+    "screens": [
+      {"width":412,"height":960,"dpr":2.625,"weight":100}
+    ],
+    "webgl": {
+      "chromium": {"vendor":"Qualcomm","renderer":"Adreno (TM) 840"}
+    }
+  },
+  {
+    "id": "android-galaxy-z-fold8-ultra-unfolded",
+    "os": "android",
+    "kind": "tablet",
+    "model": "SM-F976U",
+    "weight": 4,
+    "osVersions": ["17"],
+    "browsers": {"chrome":66,"samsung":34},
+    "cores": [[8,100]],
+    "memory": [[12,70],[16,30]],
+    "touchPoints": 10,
+    "screens": [
+      {"width":750,"height":832,"dpr":2.625,"weight":100}
+    ],
+    "webgl": {
+      "chromium": {"vendor":"Qualcomm","renderer":"Adreno (TM) 840"}
+    }
+  },
+  {
+    "id": "android-galaxy-z-fold8",
+    "os": "android",
+    "kind": "phone",
+    "model": "SM-F971U",
+    "weight": 5,
+    "osVersions": ["17"],
+    "browsers": {"chrome":66,"samsung":34},
+    "cores": [[8,100]],
+    "memory": [[12,100]],
+    "touchPoints": 5,
+    "screens": [
+      {"width":411,"height":822,"dpr":2.625,"weight":100}
+    ],
+    "webgl": {
+      "chromium": {"vendor":"Qualcomm","renderer":"Adreno (TM) 840"}
+    }
+  },
+  {
+    "id": "android-galaxy-z-fold8-unfolded",
+    "os": "android",
+    "kind": "tablet",
+    "model": "SM-F971U",
+    "weight": 3,
+    "osVersions": ["17"],
+    "browsers": {"chrome":66,"samsung":34},
+    "cores": [[8,100]],
+    "memory": [[12,100]],
+    "touchPoints": 10,
+    "screens": [
+      {"width":832,"height":720,"dpr":2.625,"weight":100}
+    ],
+    "webgl": {
+      "chromium": {"vendor":"Qualcomm","renderer":"Adreno (TM) 840"}
+    }
+  },
+  {
+    "id": "android-galaxy-a15",
+    "os": "android",
+    "kind": "phone",
+    "model": "SM-A155F",
+    "weight": 40,
+    "osVersions": ["14","15","16"],
+    "browsers": {"chrome":66,"samsung":34},
+    "cores": [[8,100]],
+    "memory": [[4,50],[6,50]],
+    "touchPoints": 5,
+    "screens": [
+      {"width":384,"height":832,"dpr":2.8125,"weight":100}
+    ],
+    "webgl": {
+      "chromium": {"vendor":"ARM","renderer":"Mali-G57 MC2"}
+    }
+  }
+]

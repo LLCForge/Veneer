@@ -1,0 +1,15 @@
+{
+  "name": "@llcforge/veneer-selenium",
+  "version": "0.1.0",
+  "description": "Selenium WebDriver (JavaScript) helpers: Chrome/Edge/Firefox options plus CDP and BiDi appliers for a Veneer profile.",
+  "license": "MIT",
+  "repository": { "type": "git", "url": "git+https://github.com/LLCForge/Veneer.git", "directory": "packages/selenium" },
+  "keywords": ["veneer", "fingerprint", "selenium", "selenium-webdriver", "webdriver", "bidi"],
+  "main": "index.js",
+  "types": "index.d.ts",
+  "files": ["index.js", "index.d.ts"],
+  "engines": { "node": ">=20" },
+  "dependencies": { "@llcforge/veneer": "^0.1.0" },
+  "peerDependencies": { "selenium-webdriver": ">=4.20" },
+  "scripts": { "test": "node --test \"test/*.test.js\"" }
+}

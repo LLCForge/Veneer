@@ -1,0 +1,21 @@
+[package]
+name = "veneer-cli"
+description = "Command-line tool and local HTTP API for Veneer browser fingerprints."
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+rust-version.workspace = true
+publish = false
+
+[[bin]]
+name = "veneer"
+path = "src/main.rs"
+
+[dependencies]
+veneer = { path = "../veneer" }
+serde.workspace = true
+serde_json.workspace = true
+clap = { version = "4", features = ["derive", "env"] }
+axum = "0.8"
+tokio = { version = "1", features = ["rt-multi-thread", "macros", "net", "signal", "sync"] }

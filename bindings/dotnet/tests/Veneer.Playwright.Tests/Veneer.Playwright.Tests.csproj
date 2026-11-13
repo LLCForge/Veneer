@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- Real-browser check. Needs `pwsh bin/Debug/net8.0/playwright.ps1 install chromium` once. -->
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Veneer.Playwright\Veneer.Playwright.csproj" />
+  </ItemGroup>
+</Project>

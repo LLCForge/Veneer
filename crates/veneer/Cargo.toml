@@ -1,0 +1,28 @@
+[package]
+name = "veneer"
+description = "Coherent, internally consistent browser fingerprint profiles for Playwright and Puppeteer."
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+rust-version.workspace = true
+readme = "../../README.md"
+keywords = ["fingerprint", "playwright", "puppeteer", "browser", "automation"]
+categories = ["web-programming", "development-tools::testing"]
+include = ["src/**", "data/**", "tests/**", "build.rs", "Cargo.toml"]
+
+[dependencies]
+serde.workspace = true
+serde_json.workspace = true
+thiserror.workspace = true
+rand_chacha.workspace = true
+
+[build-dependencies]
+serde_json.workspace = true
+
+[features]
+default = ["data-desktop", "data-mobile", "data-other"]
+# Device kinds to embed. Build with `default-features = false` and a subset for a smaller binary/WASM.
+data-desktop = []
+data-mobile = []
+data-other = []

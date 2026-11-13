@@ -1,0 +1,12 @@
+{
+  "name": "webOS",
+  "platform": "Linux armv7l",
+  "insets": {
+    "top": 0,
+    "bottom": 0
+  },
+  "versions": [
+    {"name":"webos","platformVersion":"","weight":100}
+  ],
+  "fonts": []
+}

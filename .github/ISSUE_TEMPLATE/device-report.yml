@@ -1,0 +1,65 @@
+name: Device report
+description: Real values from a device you own (console, TV, VR headset, phone, in-app browser …), collected with the /contribute page.
+title: "[device] "
+labels: ["data", "device-report"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you. Follow [docs/verification.md](https://github.com/LLCForge/Veneer/blob/main/docs/verification.md): run `veneer serve`, open `/contribute` **on the device itself**, press **Create report** and paste the JSON below.
+        Do not add screenshots, serial numbers, account names, IP addresses or anything else that identifies you or the device.
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Device class
+      options:
+        - Console
+        - TV
+        - VR headset
+        - Phone
+        - Tablet
+        - Desktop or laptop
+        - In-app browser (Instagram, Facebook, …)
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: model
+    attributes:
+      label: Manufacturer and model
+      description: As printed on the device label or shown in its settings, including the model code if there is one.
+    validations:
+      required: true
+  - type: input
+    id: os
+    attributes:
+      label: System software / OS version
+      description: Exactly as shown in the device settings (System > About or similar).
+    validations:
+      required: true
+  - type: input
+    id: browser
+    attributes:
+      label: Browser or app and its version
+      description: e.g. "built-in browser" or "Instagram" followed by the version shown in the app's settings (About page).
+    validations:
+      required: true
+  - type: textarea
+    id: report
+    attributes:
+      label: Report JSON
+      description: Paste the full output of the /contribute page without editing it.
+      render: json
+    validations:
+      required: true
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: Confirmation
+      options:
+        - label: I created this report on the device itself, in a normal (not automated) browser session.
+          required: true
+        - label: I read the report and it contains no personal data.
+          required: true
+        - label: I am fine with these values being published in the Veneer dataset under its MIT license.
+          required: true

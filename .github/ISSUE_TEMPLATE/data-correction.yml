@@ -1,0 +1,62 @@
+name: Data correction
+description: A value in the dataset is wrong or out of date (user agent, version, build number, screen, GPU, font, …).
+title: "[data] "
+labels: ["data", "correction"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Every value in Veneer must come from a checkable source. Please link one; corrections without a source cannot be merged.
+        See [docs/verification.md](https://github.com/LLCForge/Veneer/blob/main/docs/verification.md) for which sources we accept.
+  - type: input
+    id: file
+    attributes:
+      label: Data file and entry
+      description: e.g. "crates/veneer/data/devices/consoles.json, id playstation-5".
+    validations:
+      required: true
+  - type: textarea
+    id: current
+    attributes:
+      label: Current value
+      render: text
+    validations:
+      required: true
+  - type: textarea
+    id: correct
+    attributes:
+      label: Correct value
+      render: text
+    validations:
+      required: true
+  - type: dropdown
+    id: source-kind
+    attributes:
+      label: Source type
+      options:
+        - Official vendor documentation or spec page
+        - Official release notes or version feed
+        - Report from my own device (/contribute JSON attached below)
+        - Public dataset or browser source code
+        - Other (explain below)
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Source URL
+      description: Link to the page, release note, commit or issue that shows the correct value.
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: Anything else reviewers need, e.g. which OS versions or regions the value applies to. For device reports, paste the /contribute JSON here.
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: Confirmation
+      options:
+        - label: The source is public and I did not include personal data.
+          required: true

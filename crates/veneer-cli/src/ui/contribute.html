@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0b0c">
+  <meta name="description" content="Veneer: anonim cihaz raporu / anonymous device report">
+  <meta name="referrer" content="no-referrer">
+  <title>Veneer</title>
+  <link rel="icon" href="/favicon.ico">
+  <link rel="stylesheet" href="/style.css">
+  <script src="/i18n.js"></script>
+  <script src="/contribute/collector.js" defer></script>
+  <script src="/contribute.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main" data-i18n="skip">İçeriğe geç</a>
+  <header class="bar">
+    <img src="/logo.png" alt="" width="36" height="36">
+    <div>
+      <h1 data-i18n="contributeTitle">Cihaz verisi katkısı</h1>
+      <p class="muted" data-i18n="contributeSubtitle">Konsol, TV, VR ve uygulama içi tarayıcı verilerini doğrulamamıza yardım edin.</p>
+    </div>
+    <nav class="nav" aria-label="Language / Dil">
+      <div class="switch" role="group" aria-label="Language / Dil">
+        <button type="button" class="chip" data-lang="tr" aria-pressed="true">TR</button>
+        <button type="button" class="chip" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+      <a class="link" href="/" data-i18n="back">Geri dön</a>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="panel">
+      <h2 data-i18n="contributeWhatTitle">Neler toplanır</h2>
+      <p data-i18n="contributeWhat">Yalnızca donanım ve tarayıcı özellikleri: user-agent, platform, çekirdek ve bellek, dokunma noktaları, ekran ve piksel oranı, WebGL üreticisi ve işlemcisi, client hints, desteklenen medya özellikleri.</p>
+      <p data-i18n="contributeNot">Toplanmayanlar: IP adresi, çerezler, saat dilimi, kimlikler, canvas/ses parmak izleri ve serbest metin. Sunucu hiçbir şey saklamaz ve hiçbir yere göndermez; rapor yalnızca bu sayfada oluşur.</p>
+      <p class="muted" data-i18n="contributeHow">Raporu kopyalayıp GitHub'daki cihaz raporu şablonuna yapıştırın. Göndermeden önce içeriği kendiniz okuyun.</p>
+      <div class="actions">
+        <button type="button" id="run" data-i18n="contributeRun">Raporu oluştur</button>
+        <a class="link" id="issue" href="https://github.com/LLCForge/Veneer/issues/new?template=device-report.yml" target="_blank" rel="noopener noreferrer" data-i18n="contributeIssue">GitHub'da cihaz raporu aç</a>
+      </div>
+      <p id="error" class="error" role="alert"></p>
+    </section>
+    <section class="panel" aria-live="polite">
+      <div class="row between">
+        <h2 data-i18n="contributeReport">Rapor</h2>
+        <button type="button" id="copy" class="secondary" disabled data-i18n="copy">JSON kopyala</button>
+      </div>
+      <p id="note" class="muted"></p>
+      <pre id="report" class="code" tabindex="0" data-i18n="contributeEmpty">Henüz rapor oluşturulmadı.</pre>
+    </section>
+  </main>
+</body>
+</html>

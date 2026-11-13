@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: How to verify and submit device data
+    url: https://github.com/LLCForge/Veneer/blob/main/docs/verification.md
+    about: Step-by-step guide for owners of consoles, TVs, VR headsets and in-app browsers.
+  - name: Security issue
+    url: https://github.com/LLCForge/Veneer/security/policy
+    about: Please report vulnerabilities privately, not in a public issue.

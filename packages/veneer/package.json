@@ -1,0 +1,33 @@
+{
+  "name": "@llcforge/veneer",
+  "version": "0.1.0",
+  "description": "Coherent browser fingerprints for Playwright and Puppeteer. Rust + WASM.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LLCForge/Veneer.git",
+    "directory": "packages/veneer"
+  },
+  "keywords": ["fingerprint", "playwright", "puppeteer", "browser", "user-agent", "webgl", "canvas", "wasm"],
+  "main": "index.js",
+  "types": "index.d.ts",
+  "bin": {
+    "veneer-verify": "bin/verify.js"
+  },
+  "files": ["index.js", "index.d.ts", "bin/verify.js", "wasm/veneer_wasm.js", "wasm/veneer_wasm_bg.wasm"],
+  "engines": {
+    "node": ">=20"
+  },
+  "peerDependencies": {
+    "playwright": ">=1.40",
+    "puppeteer": ">=22"
+  },
+  "peerDependenciesMeta": {
+    "playwright": { "optional": true },
+    "puppeteer": { "optional": true }
+  },
+  "scripts": {
+    "build": "cargo build -p veneer-wasm --target wasm32-unknown-unknown --release && wasm-bindgen ../../target/wasm32-unknown-unknown/release/veneer_wasm.wasm --target nodejs --out-dir wasm",
+    "test": "node --test test/"
+  }
+}

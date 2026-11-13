@@ -1,0 +1,82 @@
+[
+  {
+    "id": "fire-hd-8-2022-kfrawi",
+    "os": "fireos",
+    "kind": "tablet",
+    "model": "KFRAWI",
+    "hwModel": "KFRAWI",
+    "weight": 2,
+    "browsers": {"silk":100},
+    "cores": [[6,100]],
+    "memory": [[2,100]],
+    "touchPoints": 5,
+    "screens": [
+      {"width":601,"height":962,"dpr":1.33125,"weight":100}
+    ],
+    "webgl": {}
+  },
+  {
+    "id": "fire-hd-8-kfrapwi",
+    "os": "fireos",
+    "kind": "tablet",
+    "model": "KFRAPWI",
+    "hwModel": "KFRAPWI",
+    "weight": 2,
+    "browsers": {"silk":100},
+    "cores": [[6,100]],
+    "memory": [[3,100]],
+    "touchPoints": 5,
+    "screens": [
+      {"width":601,"height":962,"dpr":1.33125,"weight":100}
+    ],
+    "webgl": {}
+  },
+  {
+    "id": "fire-hd-8-2024-kfraswi",
+    "os": "fireos",
+    "kind": "tablet",
+    "model": "KFRASWI",
+    "hwModel": "KFRASWI",
+    "weight": 1,
+    "browsers": {"silk":100},
+    "cores": [[6,100]],
+    "memory": [[4,100]],
+    "touchPoints": 5,
+    "screens": [
+      {"width":601,"height":962,"dpr":1.33125,"weight":100}
+    ],
+    "webgl": {}
+  },
+  {
+    "id": "fire-tv-stick-4k-2023",
+    "os": "fireos",
+    "kind": "tv",
+    "model": "AFTKM",
+    "hwModel": "AFTKM",
+    "weight": 2,
+    "browsers": {"silk":100},
+    "cores": [[4,100]],
+    "memory": [[2,100]],
+    "touchPoints": 0,
+    "screens": [
+      {"width":960,"height":540,"dpr":2,"weight":100}
+    ],
+    "webgl": {}
+  },
+  {
+    "id": "fire-tv-stick-4k-max-2023",
+    "os": "fireos",
+    "kind": "tv",
+    "model": "AFTKRT",
+    "hwModel": "AFTKRT",
+    "weight": 2,
+    "browsers": {"silk":100},
+    "cores": [[4,100]],
+    "memory": [[2,100]],
+    "touchPoints": 0,
+    "screens": [
+      {"width":960,"height":540,"dpr":2,"weight":100}
+    ],
+    "webgl": {}
+  }
+]

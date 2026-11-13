@@ -1,0 +1,250 @@
+[
+  {
+    "id": "win-desktop-rtx3060",
+    "os": "windows",
+    "kind": "desktop",
+    "weight": 90,
+    "browsers": {"chrome":62,"edge":22,"firefox":12,"brave":4,"opera":3},
+    "cores": [[12,40],[16,35],[8,25]],
+    "memory": [[16,55],[32,45]],
+    "touchPoints": 0,
+    "screens": [
+      {"width":1920,"height":1080,"dpr":1,"weight":50},
+      {"width":1536,"height":864,"dpr":1.25,"weight":10},
+      {"width":2560,"height":1440,"dpr":1,"weight":18},
+      {"width":2048,"height":1152,"dpr":1.25,"weight":4},
+      {"width":2560,"height":1440,"dpr":1.5,"weight":4},
+      {"width":1920,"height":1080,"dpr":2,"weight":2},
+      {"width":3440,"height":1440,"dpr":1,"weight":3},
+      {"width":1600,"height":900,"dpr":1,"weight":3},
+      {"width":1366,"height":768,"dpr":1,"weight":3},
+      {"width":1920,"height":1200,"dpr":1,"weight":2},
+      {"width":1680,"height":1050,"dpr":1,"weight":1},
+      {"width":1280,"height":1024,"dpr":1,"weight":1}
+    ],
+    "webgl": {
+      "chromium": {"vendor":"Google Inc. (NVIDIA)","renderer":"ANGLE (NVIDIA, NVIDIA GeForce RTX 3060 (0x00002504) Direct3D11 vs_5_0 ps_5_0, D3D11)"},
+      "gecko": {"vendor":"Google Inc. (NVIDIA)","renderer":"ANGLE (NVIDIA, NVIDIA GeForce GTX 980 Direct3D11 vs_5_0 ps_5_0), or similar"}
+    }
+  },
+  {
+    "id": "win-desktop-rtx4060",
+    "os": "windows",
+    "kind": "desktop",
+    "weight": 70,
+    "browsers": {"chrome":62,"edge":22,"firefox":12,"brave":4,"opera":3},
+    "cores": [[12,30],[16,40],[20,30]],
+    "memory": [[16,40],[32,60]],
+    "touchPoints": 0,
+    "screens": [
+      {"width":1920,"height":1080,"dpr":1,"weight":50},
+      {"width":1536,"height":864,"dpr":1.25,"weight":10},
+      {"width":2560,"height":1440,"dpr":1,"weight":18},
+      {"width":2048,"height":1152,"dpr":1.25,"weight":4},
+      {"width":2560,"height":1440,"dpr":1.5,"weight":4},
+      {"width":1920,"height":1080,"dpr":2,"weight":2},
+      {"width":3440,"height":1440,"dpr":1,"weight":3},
+      {"width":1600,"height":900,"dpr":1,"weight":3},
+      {"width":1366,"height":768,"dpr":1,"weight":3},
+      {"width":1920,"height":1200,"dpr":1,"weight":2},
+      {"width":1680,"height":1050,"dpr":1,"weight":1},
+      {"width":1280,"height":1024,"dpr":1,"weight":1}
+    ],
+    "webgl": {
+      "chromium": {"vendor":"Google Inc. (NVIDIA)","renderer":"ANGLE (NVIDIA, NVIDIA GeForce RTX 4060 (0x00002882) Direct3D11 vs_5_0 ps_5_0, D3D11)"},
+      "gecko": {"vendor":"Google Inc. (NVIDIA)","renderer":"ANGLE (NVIDIA, NVIDIA GeForce GTX 980 Direct3D11 vs_5_0 ps_5_0), or similar"}
+    }
+  },
+  {
+    "id": "win-desktop-rx6600",
+    "os": "windows",
+    "kind": "desktop",
+    "weight": 40,
+    "browsers": {"chrome":62,"edge":22,"firefox":12,"brave":4,"opera":3},
+    "cores": [[12,50],[16,30],[8,20]],
+    "memory": [[16,60],[32,40]],
+    "touchPoints": 0,
+    "screens": [
+      {"width":1920,"height":1080,"dpr":1,"weight":50},
+      {"width":1536,"height":864,"dpr":1.25,"weight":10},
+      {"width":2560,"height":1440,"dpr":1,"weight":18},
+      {"width":2048,"height":1152,"dpr":1.25,"weight":4},
+      {"width":2560,"height":1440,"dpr":1.5,"weight":4},
+      {"width":1920,"height":1080,"dpr":2,"weight":2},
+      {"width":3440,"height":1440,"dpr":1,"weight":3},
+      {"width":1600,"height":900,"dpr":1,"weight":3},
+      {"width":1366,"height":768,"dpr":1,"weight":3},
+      {"width":1920,"height":1200,"dpr":1,"weight":2},
+      {"width":1680,"height":1050,"dpr":1,"weight":1},
+      {"width":1280,"height":1024,"dpr":1,"weight":1}
+    ],
+    "webgl": {
+      "chromium": {"vendor":"Google Inc. (AMD)","renderer":"ANGLE (AMD, AMD Radeon RX 6600 (0x000073FF) Direct3D11 vs_5_0 ps_5_0, D3D11)"},
+      "gecko": {"vendor":"Google Inc. (AMD)","renderer":"ANGLE (AMD, Radeon R9 200 Series Direct3D11 vs_5_0 ps_5_0), or similar"}
+    }
+  },
+  {
+    "id": "win-laptop-uhd620",
+    "os": "windows",
+    "kind": "laptop",
+    "weight": 80,
+    "browsers": {"chrome":62,"edge":22,"firefox":12,"brave":4,"opera":3},
+    "cores": [[8,70],[4,30]],
+    "memory": [[8,60],[16,40]],
+    "touchPoints": 0,
+    "screens": [
+      {"width":1366,"height":768,"dpr":1,"weight":35},
+      {"width":1536,"height":864,"dpr":1.25,"weight":30},
+      {"width":1920,"height":1080,"dpr":1,"weight":15},
+      {"width":1280,"height":720,"dpr":1.5,"weight":10},
+      {"width":1600,"height":900,"dpr":1,"weight":10}
+    ],
+    "webgl": {
+      "chromium": {"vendor":"Google Inc. (Intel)","renderer":"ANGLE (Intel, Intel(R) UHD Graphics 620 (0x00005917) Direct3D11 vs_5_0 ps_5_0, D3D11)"},
+      "gecko": {"vendor":"Google Inc. (Intel)","renderer":"ANGLE (Intel, Intel(R) HD Graphics 400 Direct3D11 vs_5_0 ps_5_0), or similar"}
+    }
+  },
+  {
+    "id": "win-laptop-irisxe",
+    "os": "windows",
+    "kind": "laptop",
+    "weight": 110,
+    "browsers": {"chrome":62,"edge":22,"firefox":12,"brave":4,"opera":3},
+    "cores": [[8,30],[12,50],[16,20]],
+    "memory": [[8,35],[16,65]],
+    "touchPoints": 0,
+    "screens": [
+      {"width":1536,"height":864,"dpr":1.25,"weight":40},
+      {"width":1280,"height":720,"dpr":1.5,"weight":15},
+      {"width":1920,"height":1080,"dpr":1,"weight":15},
+      {"width":1536,"height":960,"dpr":1.25,"weight":8},
+      {"width":1280,"height":800,"dpr":1.5,"weight":6},
+      {"width":1366,"height":768,"dpr":1,"weight":5},
+      {"width":1440,"height":900,"dpr":2,"weight":3},
+      {"width":2560,"height":1440,"dpr":1,"weight":4}
+    ],
+    "webgl": {
+      "chromium": {"vendor":"Google Inc. (Intel)","renderer":"ANGLE (Intel, Intel(R) Iris(R) Xe Graphics (0x00009A49) Direct3D11 vs_5_0 ps_5_0, D3D11)"},
+      "gecko": {"vendor":"Google Inc. (Intel)","renderer":"ANGLE (Intel, Intel(R) HD Graphics 400 Direct3D11 vs_5_0 ps_5_0), or similar"}
+    }
+  },
+  {
+    "id": "win-laptop-radeon-igpu",
+    "os": "windows",
+    "kind": "laptop",
+    "weight": 50,
+    "browsers": {"chrome":62,"edge":22,"firefox":12,"brave":4,"opera":3},
+    "cores": [[12,40],[16,60]],
+    "memory": [[8,30],[16,70]],
+    "touchPoints": 0,
+    "screens": [
+      {"width":1536,"height":864,"dpr":1.25,"weight":40},
+      {"width":1280,"height":720,"dpr":1.5,"weight":15},
+      {"width":1920,"height":1080,"dpr":1,"weight":15},
+      {"width":1536,"height":960,"dpr":1.25,"weight":8},
+      {"width":1280,"height":800,"dpr":1.5,"weight":6},
+      {"width":1366,"height":768,"dpr":1,"weight":5},
+      {"width":1440,"height":900,"dpr":2,"weight":3},
+      {"width":2560,"height":1440,"dpr":1,"weight":4}
+    ],
+    "webgl": {
+      "chromium": {"vendor":"Google Inc. (AMD)","renderer":"ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001638) Direct3D11 vs_5_0 ps_5_0, D3D11)"},
+      "gecko": {"vendor":"Google Inc. (AMD)","renderer":"ANGLE (AMD, Radeon R9 200 Series Direct3D11 vs_5_0 ps_5_0), or similar"}
+    }
+  },
+  {
+    "id": "win-desktop-gtx1060",
+    "os": "windows",
+    "kind": "desktop",
+    "weight": 30,
+    "osVersions": ["10"],
+    "browsers": {"chrome":62,"edge":22,"firefox":12,"brave":4,"opera":3},
+    "cores": [[4,30],[6,40],[8,30]],
+    "memory": [[8,40],[16,60]],
+    "touchPoints": 0,
+    "screens": [
+      {"width":1920,"height":1080,"dpr":1,"weight":60},
+      {"width":1366,"height":768,"dpr":1,"weight":8},
+      {"width":1600,"height":900,"dpr":1,"weight":6},
+      {"width":2560,"height":1440,"dpr":1,"weight":10},
+      {"width":1536,"height":864,"dpr":1.25,"weight":5},
+      {"width":1680,"height":1050,"dpr":1,"weight":4},
+      {"width":1920,"height":1200,"dpr":1,"weight":4},
+      {"width":1280,"height":1024,"dpr":1,"weight":3}
+    ],
+    "webgl": {
+      "chromium": {"vendor":"Google Inc. (NVIDIA)","renderer":"ANGLE (NVIDIA, NVIDIA GeForce GTX 1060 6GB (0x00001C03) Direct3D11 vs_5_0 ps_5_0, D3D11)"},
+      "gecko": {"vendor":"Google Inc. (NVIDIA)","renderer":"ANGLE (NVIDIA, NVIDIA GeForce GTX 980 Direct3D11 vs_5_0 ps_5_0), or similar"}
+    }
+  },
+  {
+    "id": "win-desktop-gtx1650",
+    "os": "windows",
+    "kind": "desktop",
+    "weight": 40,
+    "browsers": {"chrome":62,"edge":22,"firefox":12,"brave":4,"opera":3},
+    "cores": [[6,40],[8,40],[12,20]],
+    "memory": [[8,30],[16,70]],
+    "touchPoints": 0,
+    "screens": [
+      {"width":1920,"height":1080,"dpr":1,"weight":60},
+      {"width":1366,"height":768,"dpr":1,"weight":8},
+      {"width":1600,"height":900,"dpr":1,"weight":6},
+      {"width":2560,"height":1440,"dpr":1,"weight":10},
+      {"width":1536,"height":864,"dpr":1.25,"weight":5},
+      {"width":1680,"height":1050,"dpr":1,"weight":4},
+      {"width":1920,"height":1200,"dpr":1,"weight":4},
+      {"width":1280,"height":1024,"dpr":1,"weight":3}
+    ],
+    "webgl": {
+      "chromium": {"vendor":"Google Inc. (NVIDIA)","renderer":"ANGLE (NVIDIA, NVIDIA GeForce GTX 1650 (0x00001F82) Direct3D11 vs_5_0 ps_5_0, D3D11)"},
+      "gecko": {"vendor":"Google Inc. (NVIDIA)","renderer":"ANGLE (NVIDIA, NVIDIA GeForce GTX 980 Direct3D11 vs_5_0 ps_5_0), or similar"}
+    }
+  },
+  {
+    "id": "win-laptop-hd520",
+    "os": "windows",
+    "kind": "laptop",
+    "weight": 20,
+    "osVersions": ["10"],
+    "browsers": {"chrome":62,"edge":22,"firefox":12,"brave":4,"opera":3},
+    "cores": [[4,100]],
+    "memory": [[4,40],[8,60]],
+    "touchPoints": 0,
+    "screens": [
+      {"width":1366,"height":768,"dpr":1,"weight":35},
+      {"width":1536,"height":864,"dpr":1.25,"weight":30},
+      {"width":1920,"height":1080,"dpr":1,"weight":15},
+      {"width":1280,"height":720,"dpr":1.5,"weight":10},
+      {"width":1600,"height":900,"dpr":1,"weight":10}
+    ],
+    "webgl": {
+      "chromium": {"vendor":"Google Inc. (Intel)","renderer":"ANGLE (Intel, Intel(R) HD Graphics 520 (0x00001916) Direct3D11 vs_5_0 ps_5_0, D3D11)"},
+      "gecko": {"vendor":"Google Inc. (Intel)","renderer":"ANGLE (Intel, Intel(R) HD Graphics 400 Direct3D11 vs_5_0 ps_5_0), or similar"}
+    }
+  },
+  {
+    "id": "win-laptop-snapdragon-x",
+    "os": "windows",
+    "kind": "laptop",
+    "weight": 8,
+    "osVersions": ["11-24H2"],
+    "architecture": "arm",
+    "browsers": {"chrome":45,"edge":45,"firefox":10,"opera":3},
+    "cores": [[12,100]],
+    "memory": [[16,70],[32,30]],
+    "touchPoints": 0,
+    "screens": [
+      {"width":1536,"height":864,"dpr":1.25,"weight":30},
+      {"width":1280,"height":800,"dpr":1.5,"weight":25},
+      {"width":1536,"height":1024,"dpr":1.5,"weight":20},
+      {"width":1536,"height":960,"dpr":1.25,"weight":10},
+      {"width":1440,"height":900,"dpr":2,"weight":10},
+      {"width":1920,"height":1080,"dpr":1,"weight":5}
+    ],
+    "webgl": {
+      "chromium": {"vendor":"Google Inc. (Qualcomm)","renderer":"ANGLE (Qualcomm, Qualcomm(R) Adreno(TM) X1-85 GPU Direct3D11 vs_5_0 ps_5_0, D3D11)"},
+      "gecko": {"vendor":"Google Inc. (Qualcomm)","renderer":"ANGLE (Qualcomm, Qualcomm(R) Adreno(TM) X1-85 GPU Direct3D11 vs_5_0 ps_5_0), or similar"}
+    }
+  }
+]

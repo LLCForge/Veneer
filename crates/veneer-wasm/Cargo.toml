@@ -1,0 +1,26 @@
+[package]
+name = "veneer-wasm"
+description = "WebAssembly bindings for Veneer."
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+rust-version.workspace = true
+publish = false
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+veneer = { path = "../veneer", default-features = false }
+serde.workspace = true
+serde_json.workspace = true
+wasm-bindgen = "0.2"
+serde-wasm-bindgen = "0.6"
+
+[features]
+default = ["data-desktop", "data-mobile", "data-other"]
+# Pass-through so a mobile-only or desktop-only WASM build embeds only that part of the dataset.
+data-desktop = ["veneer/data-desktop"]
+data-mobile = ["veneer/data-mobile"]
+data-other = ["veneer/data-other"]

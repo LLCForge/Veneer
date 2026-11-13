@@ -1,0 +1,20 @@
+{
+  "name": "Brave",
+  "engine": "chromium",
+  "clientHints": true,
+  "chBrand": "Brave",
+  "toolbar": {
+    "desktop": 85,
+    "mobile": 112
+  },
+  "versions": [
+    {"major":158,"full":"158.0.0.0","weight":75},
+    {"major":157,"full":"157.0.0.0","weight":25}
+  ],
+  "ua": {
+    "windows": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{chromium}.0.0.0 Safari/537.36",
+    "macos": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{chromium}.0.0.0 Safari/537.36",
+    "linux": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{chromium}.0.0.0 Safari/537.36",
+    "android": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{chromium}.0.0.0 {mobile}Safari/537.36"
+  }
+}

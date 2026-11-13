@@ -1,0 +1,13 @@
+{
+  "name": { "message": "Veneer profile tester" },
+  "description": { "message": "Apply a Veneer fingerprint profile to a tab in your own browser for testing." },
+  "bundleLabel": { "message": "Profile bundle (JSON)" },
+  "bundleHint": { "message": "Create one with: node bundle.js --os macos --locale en-US" },
+  "apply": { "message": "Apply to this tab" },
+  "detach": { "message": "Remove" },
+  "applied": { "message": "Applied $DEVICE$. The tab was reloaded.", "placeholders": { "device": { "content": "$1" } } },
+  "detached": { "message": "Removed. The tab was reloaded." },
+  "noTab": { "message": "No active tab." },
+  "badJson": { "message": "The bundle is not valid JSON." },
+  "failed": { "message": "The profile could not be applied." }
+}

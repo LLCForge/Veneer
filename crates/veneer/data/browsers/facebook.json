@@ -1,0 +1,16 @@
+{
+  "name": "Facebook in-app browser",
+  "engine": "webkit",
+  "maxCores": 8,
+  "toolbar": {
+    "desktop": 0,
+    "mobile": 100
+  },
+  "versions": [
+    {"major":580,"full":"580.0.0.47.72","build":"1074444153","revision":"1079602028","weight":60},
+    {"major":579,"full":"579.0.0.57.68","build":"1068430959","revision":"1075661921","weight":40}
+  ],
+  "ua": {
+    "ios": "Mozilla/5.0 (iPhone; CPU iPhone OS {osVersion_} like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/{osBuild} Safari/604.1 [FBAN/FBIOS;FBAV/{full};FBBV/{build};FBDV/{hwModel};FBMD/iPhone;FBSN/iOS;FBSV/{osVersion};FBSS/{scaleInt};FBID/phone;FBLC/{locale_};FBOP/5;FBRV/{revision};IABMV/1];FBNV/1"
+  }
+}

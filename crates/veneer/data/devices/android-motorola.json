@@ -1,0 +1,128 @@
+[
+  {
+    "id": "android-motorola-moto-g84",
+    "os": "android",
+    "kind": "phone",
+    "model": "moto g84 5G",
+    "weight": 40,
+    "osVersions": ["13","14","15"],
+    "browsers": {"chrome":100},
+    "cores": [[8,100]],
+    "memory": [[12,100]],
+    "touchPoints": 5,
+    "screens": [
+      {"width":432,"height":960,"dpr":2.5,"weight":100}
+    ],
+    "webgl": {
+      "chromium": {"vendor":"Qualcomm","renderer":"Adreno (TM) 619"}
+    }
+  },
+  {
+    "id": "android-motorola-moto-g54",
+    "os": "android",
+    "kind": "phone",
+    "model": "moto g54 5G",
+    "weight": 40,
+    "osVersions": ["13","14","15"],
+    "browsers": {"chrome":100},
+    "cores": [[8,100]],
+    "memory": [[8,100]],
+    "touchPoints": 5,
+    "screens": [
+      {"width":432,"height":960,"dpr":2.5,"weight":100}
+    ],
+    "webgl": {
+      "chromium": {"vendor":"Imagination Technologies","renderer":"PowerVR B-Series BXM-8-256"}
+    }
+  },
+  {
+    "id": "android-motorola-moto-g34",
+    "os": "android",
+    "kind": "phone",
+    "model": "moto g34 5G",
+    "weight": 40,
+    "osVersions": ["14","15"],
+    "browsers": {"chrome":100},
+    "cores": [[8,100]],
+    "memory": [[8,100]],
+    "touchPoints": 5,
+    "screens": [
+      {"width":412,"height":915,"dpr":1.75,"weight":100}
+    ],
+    "webgl": {
+      "chromium": {"vendor":"Qualcomm","renderer":"Adreno (TM) 619"}
+    }
+  },
+  {
+    "id": "android-motorola-moto-g-power-5g-2024",
+    "os": "android",
+    "kind": "phone",
+    "model": "moto g power 5G - 2024",
+    "weight": 15,
+    "osVersions": ["14","15"],
+    "browsers": {"chrome":100},
+    "cores": [[8,100]],
+    "memory": [[8,100]],
+    "touchPoints": 5,
+    "screens": [
+      {"width":432,"height":960,"dpr":2.5,"weight":100}
+    ],
+    "webgl": {
+      "chromium": {"vendor":"Imagination Technologies","renderer":"PowerVR B-Series BXM-8-256"}
+    }
+  },
+  {
+    "id": "android-motorola-edge-40",
+    "os": "android",
+    "kind": "phone",
+    "model": "motorola edge 40",
+    "weight": 15,
+    "osVersions": ["13","14","15"],
+    "browsers": {"chrome":100},
+    "cores": [[8,100]],
+    "memory": [[8,100]],
+    "touchPoints": 5,
+    "screens": [
+      {"width":432,"height":960,"dpr":2.5,"weight":100}
+    ],
+    "webgl": {
+      "chromium": {"vendor":"ARM","renderer":"Mali-G77 MC9"}
+    }
+  },
+  {
+    "id": "android-motorola-moto-g64",
+    "os": "android",
+    "kind": "phone",
+    "model": "moto g64 5G",
+    "weight": 15,
+    "osVersions": ["14","15"],
+    "browsers": {"chrome":100},
+    "cores": [[8,100]],
+    "memory": [[8,100]],
+    "touchPoints": 5,
+    "screens": [
+      {"width":432,"height":960,"dpr":2.5,"weight":100}
+    ],
+    "webgl": {
+      "chromium": {"vendor":"Imagination Technologies","renderer":"PowerVR B-Series BXM-8-256"}
+    }
+  },
+  {
+    "id": "android-motorola-moto-g73",
+    "os": "android",
+    "kind": "phone",
+    "model": "moto g73 5G",
+    "weight": 15,
+    "osVersions": ["13","14"],
+    "browsers": {"chrome":100},
+    "cores": [[8,100]],
+    "memory": [[8,100]],
+    "touchPoints": 5,
+    "screens": [
+      {"width":432,"height":960,"dpr":2.5,"weight":100}
+    ],
+    "webgl": {
+      "chromium": {"vendor":"Imagination Technologies","renderer":"PowerVR B-Series BXM-8-256"}
+    }
+  }
+]

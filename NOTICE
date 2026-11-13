@@ -1,0 +1,43 @@
+Veneer
+Copyright (c) 2026 The Veneer Authors
+
+This product is licensed under the MIT License. See the LICENSE file for the
+full license text.
+
+"The Veneer Authors" refers to everyone who has contributed to this project.
+The list of contributors is available in the Git history of the repository:
+https://github.com/LLCForge/Veneer/graphs/contributors
+
+--------------------------------------------------------------------------------
+Dataset
+--------------------------------------------------------------------------------
+
+The device configuration dataset shipped with Veneer (crates/veneer/data/) describes
+aggregate hardware and software characteristics such as operating system,
+browser version, GPU strings, screen classes, font lists, locales and
+timezones. It contains no personal data: no IP addresses, account identifiers,
+cookies, browsing history, or any value that identifies an individual.
+
+Each data source and its license is recorded in crates/veneer/data/SOURCES.md. Data that
+cannot be redistributed under terms compatible with the MIT License is not
+accepted into the repository.
+
+--------------------------------------------------------------------------------
+Third-party software
+--------------------------------------------------------------------------------
+
+Veneer depends on third-party Rust crates and npm packages, each distributed
+under its own license. Their license texts are bundled with release artifacts
+and can be listed from source with:
+
+    cargo about generate about.hbs
+    npx license-checker --production
+
+--------------------------------------------------------------------------------
+Trademarks
+--------------------------------------------------------------------------------
+
+Browser, operating system and GPU names (for example Chrome, Edge, Firefox,
+Safari, Windows, macOS, NVIDIA, AMD, Intel, Apple) are trademarks of their
+respective owners. They appear in this project only to describe real-world
+device configurations. Their use does not imply endorsement.

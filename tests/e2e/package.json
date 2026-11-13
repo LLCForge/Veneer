@@ -1,0 +1,14 @@
+{
+  "name": "veneer-e2e",
+  "private": true,
+  "type": "module",
+  "description": "End-to-end and consistency tests for Veneer profiles in real browsers.",
+  "scripts": {
+    "test": "playwright test",
+    "parity": "node --test parity.test.mjs"
+  },
+  "devDependencies": {
+    "@fingerprintjs/fingerprintjs": "5.3.0",
+    "@playwright/test": "1.64.1"
+  }
+}

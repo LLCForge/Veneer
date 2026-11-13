@@ -1,0 +1,168 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  rust:
+    name: rust (${{ matrix.os }})
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - run: rustup show
+      - run: cargo fmt --all -- --check
+        if: matrix.os == 'ubuntu-latest'
+      - run: cargo clippy --workspace --all-targets -- -D warnings
+      - run: cargo test --workspace
+      - name: CLI smoke test
+        shell: bash
+        run: |
+          cargo run -q -p veneer-cli -- generate --device iphone-18-pro-max --seed ci --format json > profile.json
+          cargo run -q -p veneer-cli -- validate profile.json
+
+  deny:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: EmbarkStudios/cargo-deny-action@v2
+
+  npm:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: rustup show
+      - name: Install wasm-bindgen-cli matching Cargo.lock
+        run: cargo install wasm-bindgen-cli --locked --version "$(cargo pkgid -p wasm-bindgen | sed 's/.*@//')"
+      - run: npm run build
+        working-directory: packages/veneer
+      - run: npm test
+        working-directory: packages/veneer
+      - run: npm pack --dry-run
+        working-directory: packages/veneer
+
+  # P9: C ABI bindings (bindings/*). Each job builds crates/veneer-ffi and runs the binding's
+  # unit tests plus a real-Chromium check of its automation-framework helper.
+  bindings-python:
+    runs-on: ubuntu-latest
+    env:
+      VENEER_FFI_LIB: ${{ github.workspace }}/target/release/libveneer_ffi.so
+    steps:
+      - uses: actions/checkout@v4
+      - run: rustup show
+      - run: cargo build -p veneer-ffi --release
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install "playwright>=1.40" "pytest>=8"
+      - run: python -m playwright install --with-deps chromium
+      - run: python -m pytest -q
+        working-directory: bindings/python
+
+  bindings-go:
+    runs-on: ubuntu-latest
+    env:
+      CGO_LDFLAGS: -L${{ github.workspace }}/target/release
+      LD_LIBRARY_PATH: ${{ github.workspace }}/target/release
+      VENEER_CHROME: /usr/bin/google-chrome
+    steps:
+      - uses: actions/checkout@v4
+      - run: rustup show
+      - run: cargo build -p veneer-ffi --release
+      - uses: actions/setup-go@v5
+        with:
+          go-version: "1.26"
+      - run: go vet ./... && go test ./...
+        working-directory: bindings/go
+      - run: go vet ./... && go test ./...
+        working-directory: bindings/go/veneerchromedp
+      # go.sum for rod is produced here; it was not resolvable offline when the module was written.
+      - run: go mod tidy && go vet ./... && go test ./...
+        working-directory: bindings/go/veneerrod
+
+  bindings-dotnet:
+    runs-on: ubuntu-latest
+    env:
+      VENEER_FFI_LIB: ${{ github.workspace }}/target/release/libveneer_ffi.so
+    steps:
+      - uses: actions/checkout@v4
+      - run: rustup show
+      - run: cargo build -p veneer-ffi --release
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: "8.0.x"
+      - run: dotnet run --project tests/Veneer.Tests
+        working-directory: bindings/dotnet
+      - run: dotnet build tests/Veneer.Playwright.Tests
+        working-directory: bindings/dotnet
+      - run: pwsh tests/Veneer.Playwright.Tests/bin/Debug/net8.0/playwright.ps1 install --with-deps chromium
+        working-directory: bindings/dotnet
+      - run: dotnet run --no-build --project tests/Veneer.Playwright.Tests
+        working-directory: bindings/dotnet
+
+  bindings-java:
+    runs-on: ubuntu-latest
+    env:
+      VENEER_FFI_LIB: ${{ github.workspace }}/target/release/libveneer_ffi.so
+      VENEER_E2E: "1"
+    steps:
+      - uses: actions/checkout@v4
+      - run: rustup show
+      - run: cargo build -p veneer-ffi --release
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "22"
+          cache: maven
+      - run: mvn -B -q exec:java -Dexec.mainClass=com.microsoft.playwright.CLI -Dexec.args="install-deps chromium" -Dexec.classpathScope=compile
+        working-directory: bindings/java
+      - run: mvn -B verify
+        working-directory: bindings/java
+
+  js-integrations:
+    runs-on: ubuntu-latest
+    env:
+      VENEER_E2E: "1"
+      VENEER_API: http://127.0.0.1:8899
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: rustup show
+      - name: Install wasm-bindgen-cli matching Cargo.lock
+        run: cargo install wasm-bindgen-cli --locked --version "$(cargo pkgid -p wasm-bindgen | sed 's/.*@//')"
+      - run: npm run build
+        working-directory: packages/veneer
+      - name: Link @llcforge/veneer and install integration test dependencies
+        run: |
+          mkdir -p node_modules/@llcforge
+          ln -s ../../packages/veneer node_modules/@llcforge/veneer
+          npm install --no-save --no-package-lock --no-audit --no-fund \
+            playwright@1.64.1 puppeteer-core puppeteer-extra puppeteer-extra-plugin \
+            selenium-webdriver webdriverio @crawlee/browser-pool
+          npx playwright install --with-deps chromium
+      - name: Start the Veneer API
+        run: |
+          cargo build -p veneer-cli
+          target/debug/veneer serve --port 8899 &
+          for i in $(seq 1 30); do curl -sf "$VENEER_API/" >/dev/null && break; sleep 1; done
+      - name: Integration package tests
+        run: |
+          for p in cdp playwright-fixture puppeteer-extra-plugin crawlee cypress wdio-service selenium electron extension; do
+            (cd "packages/$p" && npm test)
+          done
+          node --test examples/integrations/test.js
+      - run: node ../../node_modules/playwright/cli.js test -c test/e2e
+        working-directory: packages/playwright-fixture

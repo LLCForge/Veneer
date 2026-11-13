@@ -1,0 +1,18 @@
+{
+  "name": "Google app",
+  "engine": "webkit",
+  "maxCores": 8,
+  "toolbar": {
+    "desktop": 0,
+    "mobile": 100
+  },
+  "versions": [
+    {"major":446,"full":"446.3.1011462875","weight":40},
+    {"major":445,"full":"445.5.1006576801","weight":30},
+    {"major":444,"full":"444.2.1001595231","weight":20},
+    {"major":443,"full":"443.5.997327796","weight":10}
+  ],
+  "ua": {
+    "ios": "Mozilla/5.0 (iPhone; CPU iPhone OS {osVersionFull_} like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/{full} Mobile/15E148 Safari/604.1"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "veneer-puppeteer-js-template",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "dependencies": {
+    "@llcforge/veneer": "file:../../../packages/veneer",
+    "puppeteer": "^24.0.0"
+  }
+}

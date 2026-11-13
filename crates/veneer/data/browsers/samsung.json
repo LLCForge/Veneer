@@ -1,0 +1,16 @@
+{
+  "name": "Samsung Internet",
+  "engine": "chromium",
+  "clientHints": true,
+  "chBrand": "Samsung Internet",
+  "toolbar": {
+    "desktop": 0,
+    "mobile": 112
+  },
+  "versions": [
+    {"major":29,"full":"29.0","chromium":136,"chromiumFull":"136.0.0.0","weight":100}
+  ],
+  "ua": {
+    "android": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/{full} Chrome/{chromium}.0.0.0 {mobile}Safari/537.36"
+  }
+}

@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0b0c">
+  <meta name="description" content="Veneer: coherent browser fingerprints / tutarlı tarayıcı parmak izleri">
+  <title>Veneer</title>
+  <link rel="icon" href="/favicon.ico">
+  <link rel="stylesheet" href="/style.css">
+  <script src="/i18n.js"></script>
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main" data-i18n="skip">İçeriğe geç</a>
+  <header class="bar">
+    <img src="/logo.png" alt="" width="36" height="36">
+    <div>
+      <h1>Veneer</h1>
+      <p class="muted" data-i18n="subtitle">Tutarlı tarayıcı parmak izleri</p>
+    </div>
+    <nav class="nav" aria-label="Language / Dil">
+      <div class="switch" role="group" aria-label="Language / Dil">
+        <button type="button" class="chip" data-lang="tr" aria-pressed="true">TR</button>
+        <button type="button" class="chip" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+      <a class="link" href="/validate" data-i18n="validateLink">Doğrulayıcı</a>
+      <a class="link" href="/contribute" data-i18n="contributeLink">Katkı</a>
+      <a class="link" href="/v1/catalog" data-i18n="catalogLink">API kataloğu</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="panel" id="auth" hidden>
+      <h2 data-i18n="authTitle">Erişim anahtarı</h2>
+      <p class="muted" data-i18n="authHelp">Bu sunucu bir anahtarla korunuyor.</p>
+      <form id="auth-form" class="row">
+        <label class="field grow">
+          <span data-i18n="tokenLabel">Anahtar</span>
+          <input id="token" type="password" autocomplete="off" required minlength="16" maxlength="256">
+        </label>
+        <button type="submit" data-i18n="login">Giriş</button>
+      </form>
+      <p id="auth-error" class="error" role="alert"></p>
+    </section>
+
+    <section class="panel">
+      <h2 data-i18n="constraints">Kısıtlar</h2>
+      <form id="form" class="grid">
+        <label class="field"><span data-i18n="os">İşletim sistemi</span><select name="os"><option value="" data-i18n="any">Herhangi</option></select></label>
+        <label class="field"><span data-i18n="browser">Tarayıcı</span><select name="browser"><option value="" data-i18n="any">Herhangi</option></select></label>
+        <label class="field"><span data-i18n="kind">Cihaz sınıfı</span>
+          <select name="kind">
+            <option value="" data-i18n="any">Herhangi</option>
+            <option value="desktop" data-i18n="kind.desktop">Masaüstü</option>
+            <option value="laptop" data-i18n="kind.laptop">Dizüstü</option>
+            <option value="phone" data-i18n="kind.phone">Telefon</option>
+            <option value="tablet" data-i18n="kind.tablet">Tablet</option>
+            <option value="console" data-i18n="kind.console">Konsol</option>
+            <option value="tv" data-i18n="kind.tv">Televizyon</option>
+            <option value="vr" data-i18n="kind.vr">VR</option>
+            <option value="handheld" data-i18n="kind.handheld">Handheld PC</option>
+          </select>
+        </label>
+        <label class="field"><span data-i18n="device">Cihaz</span><select name="device"><option value="" data-i18n="any">Herhangi</option></select></label>
+        <label class="field"><span data-i18n="locale">Dil</span><input name="locale" maxlength="128" autocomplete="off"></label>
+        <label class="field"><span data-i18n="country">Ülke</span><input name="country" maxlength="8" autocomplete="off"></label>
+        <label class="field"><span data-i18n="seed">Seed</span><input name="seed" maxlength="256" autocomplete="off"></label>
+        <label class="field"><span data-i18n="count">Adet</span><input name="count" type="number" min="1" max="100" value="1"></label>
+        <div class="actions">
+          <button type="submit" id="generate" data-i18n="generate">Üret</button>
+          <button type="button" id="probe" class="secondary" data-i18n="tryHere">Bu tarayıcıda dene</button>
+        </div>
+      </form>
+      <p id="error" class="error" role="alert"></p>
+    </section>
+
+    <section class="panel" aria-live="polite">
+      <div class="row between">
+        <h2 data-i18n="result">Sonuç</h2>
+        <button type="button" id="copy" class="secondary" disabled data-i18n="copy">JSON kopyala</button>
+      </div>
+      <ul id="cards" class="cards"></ul>
+      <pre id="json" class="code" tabindex="0" data-i18n="empty">Henüz bir parmak izi üretilmedi.</pre>
+    </section>
+  </main>
+</body>
+</html>

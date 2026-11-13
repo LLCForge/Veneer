@@ -1,0 +1,75 @@
+[
+  {
+    "id": "steam-deck-lcd",
+    "os": "linux",
+    "kind": "handheld",
+    "weight": 2,
+    "browsers": {"firefox":100},
+    "cores": [[8,100]],
+    "memory": [[16,100]],
+    "touchPoints": 0,
+    "screens": [
+      {"width":1280,"height":800,"dpr":1,"weight":100}
+    ],
+    "webgl": {}
+  },
+  {
+    "id": "steam-deck-oled",
+    "os": "linux",
+    "kind": "handheld",
+    "weight": 2,
+    "browsers": {"firefox":100},
+    "cores": [[8,100]],
+    "memory": [[16,100]],
+    "touchPoints": 0,
+    "screens": [
+      {"width":1280,"height":800,"dpr":1,"weight":100}
+    ],
+    "webgl": {}
+  },
+  {
+    "id": "rog-ally-z1-extreme",
+    "os": "windows",
+    "kind": "handheld",
+    "weight": 2,
+    "osVersions": ["11-23H2","11-24H2"],
+    "browsers": {"chrome":60,"edge":40},
+    "cores": [[16,100]],
+    "memory": [[16,100]],
+    "touchPoints": 10,
+    "screens": [
+      {"width":1280,"height":720,"dpr":1.5,"weight":100}
+    ],
+    "webgl": {}
+  },
+  {
+    "id": "rog-ally-z1",
+    "os": "windows",
+    "kind": "handheld",
+    "weight": 1,
+    "osVersions": ["11-23H2","11-24H2"],
+    "browsers": {"chrome":60,"edge":40},
+    "cores": [[12,100]],
+    "memory": [[16,100]],
+    "touchPoints": 10,
+    "screens": [
+      {"width":1280,"height":720,"dpr":1.5,"weight":100}
+    ],
+    "webgl": {}
+  },
+  {
+    "id": "rog-ally-x",
+    "os": "windows",
+    "kind": "handheld",
+    "weight": 1,
+    "osVersions": ["11-23H2","11-24H2"],
+    "browsers": {"chrome":60,"edge":40},
+    "cores": [[16,100]],
+    "memory": [[24,100]],
+    "touchPoints": 10,
+    "screens": [
+      {"width":1280,"height":720,"dpr":1.5,"weight":100}
+    ],
+    "webgl": {}
+  }
+]

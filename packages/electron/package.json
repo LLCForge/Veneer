@@ -1,0 +1,15 @@
+{
+  "name": "@llcforge/veneer-electron",
+  "version": "0.1.0",
+  "description": "Apply a Veneer profile to an Electron webContents through its built-in debugger.",
+  "license": "MIT",
+  "repository": { "type": "git", "url": "git+https://github.com/LLCForge/Veneer.git", "directory": "packages/electron" },
+  "keywords": ["veneer", "fingerprint", "electron", "webcontents"],
+  "main": "index.js",
+  "types": "index.d.ts",
+  "files": ["index.js", "index.d.ts"],
+  "engines": { "node": ">=20" },
+  "dependencies": { "@llcforge/veneer": "^0.1.0" },
+  "peerDependencies": { "electron": ">=28" },
+  "scripts": { "test": "node --test \"test/*.test.js\"" }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "Microsoft Edge for iOS",
+  "engine": "webkit",
+  "maxCores": 8,
+  "toolbar": {
+    "desktop": 0,
+    "mobile": 120
+  },
+  "versions": [
+    {"major":157,"full":"157.0.4341.42","weight":70},
+    {"major":155,"full":"155.0.4283.61","weight":30}
+  ],
+  "ua": {
+    "ios": "Mozilla/5.0 (iPhone; CPU iPhone OS {osVersionFull_} like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) EdgiOS/{full} Version/{osMajor}.0 Mobile/15E148 Safari/604.1"
+  }
+}

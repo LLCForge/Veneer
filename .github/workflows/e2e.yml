@@ -1,0 +1,95 @@
+name: E2E
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: e2e-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  # Builds the WASM package once and checks it against the native CLI for the same seeds.
+  wasm-parity:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: rustup show
+      - name: Install wasm-bindgen-cli matching Cargo.lock
+        run: cargo install wasm-bindgen-cli --locked --version "$(cargo pkgid -p wasm-bindgen | sed 's/.*@//')"
+      - name: Build WASM package
+        run: npm run build
+        working-directory: packages/veneer
+      - name: Build native CLI
+        run: cargo build --locked --release -p veneer-cli
+      - name: WASM and native produce identical output
+        run: node --test parity.test.mjs
+        working-directory: tests/e2e
+        env:
+          VENEER_BIN: ${{ github.workspace }}/target/release/veneer
+      - uses: actions/upload-artifact@v4
+        with:
+          name: veneer-wasm
+          path: packages/veneer/wasm/
+          if-no-files-found: error
+          retention-days: 3
+      - uses: actions/upload-artifact@v4
+        with:
+          name: veneer-cli
+          path: target/release/veneer
+          if-no-files-found: error
+          retention-days: 3
+
+  # Every engine runs the profiles of its own engine: collector, request headers, FingerprintJS, lie checks.
+  browsers:
+    needs: wasm-parity
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    strategy:
+      fail-fast: false
+      matrix:
+        browser: [chromium, firefox, webkit]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: tests/e2e/package-lock.json
+      - uses: actions/download-artifact@v4
+        with:
+          name: veneer-wasm
+          path: packages/veneer/wasm/
+      - uses: actions/download-artifact@v4
+        with:
+          name: veneer-cli
+          path: bin/
+      - name: Start veneer serve for the /contribute test
+        run: |
+          chmod +x bin/veneer
+          nohup bin/veneer serve --port 8812 > serve.log 2>&1 &
+          for i in $(seq 1 30); do curl -sf http://127.0.0.1:8812/v1/health && exit 0; sleep 1; done
+          exit 1
+      - run: npm ci
+        working-directory: tests/e2e
+      - run: npx playwright install --with-deps ${{ matrix.browser }}
+        working-directory: tests/e2e
+      - run: npx playwright test --project=${{ matrix.browser }}
+        working-directory: tests/e2e
+        env:
+          VENEER_API: http://127.0.0.1:8812
+      - uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: e2e-results-${{ matrix.browser }}
+          path: tests/e2e/test-results/
+          retention-days: 7

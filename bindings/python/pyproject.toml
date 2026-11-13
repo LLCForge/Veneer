@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "veneer-fingerprint"
+version = "0.1.0"
+description = "Coherent browser fingerprint profiles for Playwright (Python), backed by the Veneer Rust core."
+license = "MIT"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+playwright = ["playwright>=1.40"]
+test = ["pytest>=8"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+# The release workflow copies the platform's veneer_ffi library here before building a wheel.
+veneer = ["*.dll", "*.so", "*.dylib", "py.typed"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

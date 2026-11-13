@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0b0c">
+  <meta name="description" content="Veneer validator: paste a profile, see the report / profil yapıştır, raporu gör">
+  <title>Veneer</title>
+  <link rel="icon" href="/favicon.ico">
+  <link rel="stylesheet" href="/style.css">
+  <script src="/i18n.js"></script>
+  <script src="/validate.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main" data-i18n="skip">İçeriğe geç</a>
+  <header class="bar">
+    <img src="/logo.png" alt="" width="36" height="36">
+    <div>
+      <h1 data-i18n="validateTitle">Doğrulayıcı</h1>
+      <p class="muted" data-i18n="validateHelp">Bir profil yapıştırın, tutarlılık raporunu görün.</p>
+    </div>
+    <nav class="nav" aria-label="Language / Dil">
+      <div class="switch" role="group" aria-label="Language / Dil">
+        <button type="button" class="chip" data-lang="tr" aria-pressed="true">TR</button>
+        <button type="button" class="chip" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+      <a class="link" href="/" data-i18n="back">Geri dön</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="panel">
+      <form id="form" class="field">
+        <label class="field">
+          <span data-i18n="inputLabel">Profil JSON</span>
+          <textarea id="input" name="input" rows="14" maxlength="60000" spellcheck="false" required></textarea>
+        </label>
+        <div class="grid">
+        <label class="field">
+          <span data-i18n="formatLabel">Biçim</span>
+          <select id="format" name="format">
+            <option value="auto" data-i18n="format.auto">Otomatik</option>
+            <option value="veneer" data-i18n="format.veneer">Veneer profili</option>
+            <option value="collector" data-i18n="format.collector">Toplayıcı çıktısı (gerçek tarayıcı)</option>
+            <option value="fingerprint-suite" data-i18n="format.fingerprint-suite">fingerprint-suite</option>
+            <option value="flat" data-i18n="format.flat">Düz JSON</option>
+          </select>
+        </label>
+        <label class="field">
+          <span data-i18n="countryLabel">Bağlantı ülkesi (ör. TR)</span>
+          <input id="country" name="country" maxlength="2" autocomplete="off" pattern="[A-Za-z]{2}">
+        </label>
+        <label class="field">
+          <span data-i18n="geoTimezoneLabel">Bağlantı saat dilimi (ör. Europe/Istanbul)</span>
+          <input id="timezone" name="timezone" maxlength="64" autocomplete="off">
+        </label>
+        <label class="field">
+          <span data-i18n="disableLabel">Kapatılacak kurallar (virgülle, ör. fonts.*)</span>
+          <input id="disable" name="disable" maxlength="2000" autocomplete="off">
+        </label>
+        </div>
+        <div class="row actions">
+          <button type="submit" data-i18n="check">Doğrula</button>
+          <button type="button" id="sample" class="chip" data-i18n="sample">Örnek profil yükle</button>
+        </div>
+      </form>
+      <p id="error" class="error" role="alert"></p>
+    </section>
+
+    <section class="panel" aria-live="polite">
+      <div class="row between">
+        <h2 data-i18n="result">Sonuç</h2>
+        <span id="score" class="badge"></span>
+      </div>
+      <p id="summary" class="muted" data-i18n="validateEmpty">Henüz bir profil doğrulanmadı.</p>
+      <p id="missing" class="muted"></p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th scope="col" data-i18n="severity">Önem</th>
+              <th scope="col" data-i18n="rule">Kural</th>
+              <th scope="col" data-i18n="message">Açıklama</th>
+              <th scope="col" data-i18n="fix">Düzeltme</th>
+            </tr>
+          </thead>
+          <tbody id="rows"></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

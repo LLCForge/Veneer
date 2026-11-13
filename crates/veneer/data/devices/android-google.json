@@ -1,0 +1,97 @@
+[
+  {
+    "id": "android-pixel-8",
+    "os": "android",
+    "kind": "phone",
+    "model": "Pixel 8",
+    "weight": 30,
+    "osVersions": ["14","15","16","17"],
+    "browsers": {"chrome":90,"firefox":6,"brave":4},
+    "cores": [[9,100]],
+    "memory": [[8,100]],
+    "touchPoints": 5,
+    "screens": [
+      {"width":412,"height":915,"dpr":2.625,"weight":100}
+    ],
+    "webgl": {
+      "chromium": {"vendor":"ARM","renderer":"Mali-G715"},
+      "gecko": {"vendor":"ARM","renderer":"Mali-G715"}
+    }
+  },
+  {
+    "id": "android-pixel-9",
+    "os": "android",
+    "kind": "phone",
+    "model": "Pixel 9",
+    "weight": 25,
+    "osVersions": ["15","16","17"],
+    "browsers": {"chrome":90,"firefox":6,"brave":4},
+    "cores": [[8,100]],
+    "memory": [[12,100]],
+    "touchPoints": 5,
+    "screens": [
+      {"width":412,"height":923,"dpr":2.625,"weight":100}
+    ],
+    "webgl": {
+      "chromium": {"vendor":"ARM","renderer":"Mali-G715"},
+      "gecko": {"vendor":"ARM","renderer":"Mali-G715"}
+    }
+  },
+  {
+    "id": "android-pixel-6",
+    "os": "android",
+    "kind": "phone",
+    "model": "Pixel 6",
+    "weight": 8,
+    "osVersions": ["14","15","16"],
+    "browsers": {"chrome":92,"firefox":5,"brave":3},
+    "cores": [[8,100]],
+    "memory": [[8,100]],
+    "touchPoints": 5,
+    "screens": [
+      {"width":412,"height":915,"dpr":2.625,"weight":100}
+    ],
+    "webgl": {
+      "chromium": {"vendor":"ARM","renderer":"Mali-G78"},
+      "gecko": {"vendor":"ARM","renderer":"Mali-G78"}
+    }
+  },
+  {
+    "id": "android-pixel-7",
+    "os": "android",
+    "kind": "phone",
+    "model": "Pixel 7",
+    "weight": 12,
+    "osVersions": ["14","15","16","17"],
+    "browsers": {"chrome":92,"firefox":5,"brave":3},
+    "cores": [[8,100]],
+    "memory": [[8,100]],
+    "touchPoints": 5,
+    "screens": [
+      {"width":412,"height":915,"dpr":2.625,"weight":100}
+    ],
+    "webgl": {
+      "chromium": {"vendor":"ARM","renderer":"Mali-G710"},
+      "gecko": {"vendor":"ARM","renderer":"Mali-G710"}
+    }
+  },
+  {
+    "id": "android-pixel-10",
+    "os": "android",
+    "kind": "phone",
+    "model": "Pixel 10",
+    "weight": 15,
+    "osVersions": ["16","17"],
+    "browsers": {"chrome":92,"firefox":5,"brave":3},
+    "cores": [[8,100]],
+    "memory": [[12,100]],
+    "touchPoints": 5,
+    "screens": [
+      {"width":412,"height":923,"dpr":2.625,"weight":100}
+    ],
+    "webgl": {
+      "chromium": {"vendor":"Imagination Technologies","renderer":"PowerVR D-Series DXT-48-1536"},
+      "gecko": {"vendor":"Imagination Technologies","renderer":"PowerVR D-Series DXT-48-1536"}
+    }
+  }
+]

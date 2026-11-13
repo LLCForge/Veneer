@@ -1,0 +1,16 @@
+{
+  "name": "ChromeOS",
+  "platform": "Linux x86_64",
+  "chPlatform": "Chrome OS",
+  "architecture": "x86",
+  "bitness": "64",
+  "insets": {
+    "top": 0,
+    "bottom": 48
+  },
+  "versions": [
+    {"name":"16836","platformVersion":"16836.32.0","weight":80,"pins":{"chrome":"156.0.8078.93"}},
+    {"name":"16700","platformVersion":"16700.70.0","weight":20,"pins":{"chrome":"150.0.7871.289"}}
+  ],
+  "fonts": ["Arimo","Cousine","Noto Color Emoji","Noto Sans","Roboto","Tinos"]
+}

@@ -1,0 +1,20 @@
+[
+  {
+    "id": "android-oppo-reno11-f",
+    "os": "android",
+    "kind": "phone",
+    "model": "CPH2603",
+    "weight": 40,
+    "osVersions": ["14","15"],
+    "browsers": {"chrome":100},
+    "cores": [[8,100]],
+    "memory": [[8,100]],
+    "touchPoints": 5,
+    "screens": [
+      {"width":360,"height":804,"dpr":3,"weight":100}
+    ],
+    "webgl": {
+      "chromium": {"vendor":"ARM","renderer":"Mali-G68 MC4"}
+    }
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "name": "X (Twitter) in-app browser",
+  "engine": "webkit",
+  "maxCores": 8,
+  "toolbar": {
+    "desktop": 0,
+    "mobile": 100
+  },
+  "versions": [
+    {"major":11,"full":"11.98","weight":60},
+    {"major":11,"full":"11.97","weight":40}
+  ],
+  "ua": {
+    "ios": "Mozilla/5.0 (iPhone; CPU iPhone OS {osVersion_} like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/{osBuild} Twitter for iPhone/{full}"
+  }
+}

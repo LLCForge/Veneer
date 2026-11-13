@@ -1,0 +1,14 @@
+{
+  "name": "PlayStation 4 Browser",
+  "engine": "webkit",
+  "toolbar": {
+    "desktop": 0,
+    "mobile": 0
+  },
+  "versions": [
+    {"major":12,"full":"12.50","weight":100}
+  ],
+  "ua": {
+    "playstation": "Mozilla/5.0 (PlayStation 4 {full}) AppleWebKit/605.1.15 (KHTML, like Gecko)"
+  }
+}
